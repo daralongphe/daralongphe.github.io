@@ -1,0 +1,42 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: black;
+    border-bottom: 2px solid red;
+    color: white;
+    font-size:30px;
+    padding: 20px;
+
+    position: fixed;
+    top: 0;
+    width: 96.5%;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.about_me {
+    display: grid;
+    grid-template-columns: 42% auto;
+}
+#profile {
+    width: 300px;
+    position:static;
+    border-radius: 50%;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-family: sans-serif;
+
+}
