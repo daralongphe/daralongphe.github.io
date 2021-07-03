@@ -1,0 +1,44 @@
+/* my styles! */
+body {
+    background-color: cornflowerblue;
+}
+.me {
+    width: 250px;   
+}
+
+#header {
+    color: blue;
+}
+
+#skills-header {
+    font-size: 50px;
+}
+
+.info-box {
+    padding: 30px;
+    border: 1px solid black;
+}
+.contact-box {
+    border: 1px solid black;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+}
+
+.right-align {
+    text-align: right;
+}
