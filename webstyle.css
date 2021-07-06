@@ -1,42 +1,48 @@
-.fixed-top {
-    position: fixed;
-    top: 0;
-}
-
-.navbar {
-    display: grid;
-    grid-template-columns: auto auto;
-    background-color: black;
-    border-bottom: 2px solid red;
-    color: white;
-    font-size:30px;
+.nav-bar {
+    background-color: #AEAEAE;
     padding: 20px;
-
-    position: fixed;
+    border-bottom: 1px dashed white;
+    /* Fixed top position*/
+    position: absolute;
     top: 0;
-    width: 96.5%;
+    left: 0; 
+    right: 0;
+    /* Flex block for buttons */ 
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.right-align {
-    text-align: right;
+.nav-button {
+    /* Text properties */
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
-.left-align {
-    text-align: left;
+#main {
+    background-color: #ffdfba;
+    padding: 200px;
+    position: static;
+    right: 0;
+    left: 0;
 }
 
-.about_me {
-    display: grid;
-    grid-template-columns: 42% auto;
-}
-#profile {
-    width: 300px;
-    position:static;
-    border-radius: 50%;
+.name{
+    text-align: center;
+    font-size: 48px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-style: bold;
+    letter-spacing: 8px;
+    color: white;
 }
 
-.subtitle {
-    font-size: 20px;
-    font-family: sans-serif;
-
+.altname {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: black;
 }
