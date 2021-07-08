@@ -3,39 +3,51 @@ body {
 }
 
 .nav-bar {
-    background-color: #AEAEAE;
-    padding: 10px;
+    background-color: #470001;
     /* Fixed top position*/
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0; 
     right: 0;
+    padding-bottom: 20px; 
     /* Flex block for buttons */ 
     display: flex;
     flex-direction: row-reverse;
-    border-bottom: 1px dashed white;
-
 }
 
 .nav-button {
     /* Text properties */
-    font-size: 16px;
+    font-size: 24px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
+    /* Shape properties */
     background-color: black;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 30px;
     border: 1px solid black;
+    /* Position properties */
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.button-box{
+    /* Position properties */
+    position: relative;
+    top: 20px;
+    right: 20px;
+    margin-bottom: 20px;
 }
 
 .container{
-    background-color: #AEAEAE;
-    padding: 200px;
-    position: static;
+    background-color: #470001;
+    padding: 300px;
+    position: relative;
+    top: 42px;
     right: 0;
     left: 0;
     text-align: center;
+    z-index: -1;
 }
 
 .container span{ 
@@ -44,10 +56,12 @@ body {
 }
 
 .name{
+    text-align: center;
     color: white;
-    background-color: #AEAEAE;
+    background-color: #470001;
     position: relative;
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 1000;
     letter-spacing: 8px;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
     font-style: bold;
@@ -60,13 +74,42 @@ body {
         margin-bottom: -40px;
     }
     30%{
-        letter-spacing: 25px;
+        letter-spacing: 15px;
         margin-bottom: -40px;
     }
 }
 
 .nickname { 
+    text-align: center;
     font-size: 24px;
+    font-weight: 400;
     font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-    color: black;
+    color: #ff6961;
+}
+
+
+.grid{
+    display: grid;
+    grid-template-columns: 40% auto;
+    position:relative;
+    top: 100px;
+}
+
+#right{
+    text-align: right;
+}
+
+.self-photo{
+    position: relative;
+    width: 70%;
+    right: 50px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+#khmer-font{
+    font-family: Suwannaphum,DaunPenh,Code2000;
+    font-weight: 400px;
+    color: #470001;
+    font-size:130%;
 }
