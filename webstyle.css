@@ -17,7 +17,7 @@ body {
 
 .nav-button {
     /* Text properties */
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     color: white;
     /* Shape properties */
@@ -125,5 +125,5 @@ body {
     font-family: Suwannaphum,DaunPenh,Code2000;
     font-weight: 400px;
     color: #470001;
-    font-size: 40px;
+    font-size:130%;
 }
