@@ -1,0 +1,166 @@
+body {
+    margin:0;
+}
+
+.nav-bar {
+    background-color: rgba(0,0,0,0.6);
+    /* Fixed top position*/
+    position: fixed;
+    top: 0;
+    left: 0; 
+    right: 0;
+    padding-bottom: 20px; 
+    /* Flex block for buttons */ 
+    display: flex;
+    flex-direction: row-reverse;
+    z-index: 1;
+}
+
+
+.button-box{
+    /* Text properties */
+    font-size: 18px;        
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    /* Shape properties */
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    /* Position properties */
+    position: relative;
+    top: 15px;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 5px;
+    border-left: 1px solid white;
+    border-radius: 0;
+}
+
+.container{
+    background-color: #470001;
+    padding: 310px;
+    position: relative;
+    right: 0;
+    left: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+.container span{ 
+    display: block;
+
+}
+
+.name{
+    text-align: center;
+    color: white;
+    position: relative;
+    font-size: 50px;
+    font-weight: 1000;
+    letter-spacing: 8px;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-style: bold;
+    margin-bottom: 20px;
+    animation: text 3s 1;
+}
+
+@keyframes text {
+    30%{
+        letter-spacing: 15px;
+    }
+}
+
+.nickname { 
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: #ff6961;
+    animation-name: altname;
+    animation-duration: 3s;
+}
+
+@keyframes altname {
+    0%{
+        opacity: 0;
+        transform: translateY(-57px);
+    }
+    25%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.grid{
+    background-color: #F6F6EB;
+    display: grid;
+    height:611.781px;
+    grid-template-columns: auto 40%;
+    position:relative;
+    padding-bottom: 150px;
+}
+
+#right{
+    text-align: right;
+}
+
+.self-photo{
+    position: relative;
+    top: 200px;
+    right: 130px;
+    margin-bottom: 150px;
+    width: 70%;
+}
+
+.box{
+    position: relative;
+    height: 400px;
+    top: 150px;
+    left: 130px;
+background-color: #DDDDD2;
+
+}
+
+#khmer-font{
+    font-family: Suwannaphum,DaunPenh,Code2000;
+    font-weight: 400px;
+    color: black;
+    font-size: 40px;
+    
+}
+
+.head1{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: black;
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
+.txt1{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    color: black;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    left: 35px;
+}
+
+.float-txt{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-size: 14px;
+    position: relative;
+    top: 100px;
+    left: 465px;
+}
