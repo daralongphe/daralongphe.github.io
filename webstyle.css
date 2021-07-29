@@ -39,7 +39,7 @@ body {
 
 .container{
     background-color: #470001;
-    padding: 310px;
+    padding: 316px;
     position: relative;
     right: 0;
     left: 0;
@@ -100,34 +100,33 @@ body {
     }
 }
 
-.grid{
+.main-box{
     background-color: #F6F6EB;
-    display: grid;
     height:611.781px;
-    grid-template-columns: auto 40%;
-    position:relative;
     padding-bottom: 150px;
-}
-
-#right{
-    text-align: right;
+    position: relative;
+    z-index: -2;
 }
 
 .self-photo{
-    position: relative;
-    top: 200px;
-    right: 130px;
-    margin-bottom: 150px;
-    width: 70%;
+    display: block;
+    margin-left: 60%;
+    margin-right: 40%;
+    position:absolute;
+    bottom: 150px;
+    width: 390px;
+    height: 380px;
 }
 
 .box{
-    position: relative;
     height: 400px;
+    width: 65%;
+    margin: auto;
+    background-color: #DDDDD2;
+    position: relative;
     top: 150px;
-    left: 130px;
-background-color: #DDDDD2;
-
+    right:0;
+    z-index: -1;
 }
 
 #khmer-font{
@@ -142,25 +141,25 @@ background-color: #DDDDD2;
     font-family: century-gothic, sans-serif;;
     color: black;
     font-size: 25px;
+    margin: 0;
     position: relative;
-    top: 10px;
-    left: 35px;
+    top: 20px;
+    left: 25px;
 }
 
 .txt1{
     font-family: century-gothic, sans-serif;;
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     position: relative;
-    top: 10px;
-    left: 35px;
+    left: 30px;
 }
 
 .float-txt{
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: 14px;
-    position: relative;
-    top: 70px;
-    left: 465px;
+    position:absolute;
+    left: 36%;
+    top: 550px;
 }
