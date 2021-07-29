@@ -39,12 +39,10 @@ body {
 
 .container{
     background-color: #470001;
-    padding: 316px;
-    position: relative;
-    right: 0;
-    left: 0;
-    text-align: center;
+    padding-top:316px;
+    padding-bottom:316px;
     z-index: -1;
+    text-align: center;
 }
 
 .container span{ 
@@ -147,10 +145,16 @@ body {
     left: 25px;
 }
 
+.grid1
+{
+    display:grid;
+    grid-template-columns: auto 40%;
+}
+
 .txt1{
     font-family: century-gothic, sans-serif;;
     color: black;
-    font-size: 16px;
+    font-size: 15px;
     position: relative;
     left: 30px;
 }
@@ -159,7 +163,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: 14px;
-    position:absolute;
-    left: 36%;
-    top: 550px;
+    text-align: right;
+    margin-top: 150px;
+    margin-right: 5px;
 }
