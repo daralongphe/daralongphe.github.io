@@ -59,7 +59,7 @@ body {
     font-size: 50px;
     font-weight: 1000;
     letter-spacing: 8px;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: century-gothic, sans-serif;;
     font-style: bold;
     margin-bottom: 20px;
     animation: text 3s 1;
@@ -75,7 +75,7 @@ body {
     text-align: center;
     font-size: 24px;
     font-weight: 400;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: century-gothic, sans-serif;;
     color: #ff6961;
     animation-name: altname;
     animation-duration: 3s;
@@ -139,7 +139,7 @@ background-color: #DDDDD2;
 }
 
 .head1{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: century-gothic, sans-serif;;
     color: black;
     font-size: 25px;
     position: relative;
@@ -148,7 +148,7 @@ background-color: #DDDDD2;
 }
 
 .txt1{
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+    font-family: century-gothic, sans-serif;;
     color: black;
     font-size: 18px;
     position: relative;
