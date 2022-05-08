@@ -1,11 +1,12 @@
 body {
     margin:0;
+    background-color: #F6F6EB;
 }
 
 .nav-bar {
     background-color: rgba(0,0,0,0.6);
     /* Fixed top position*/
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0; 
     right: 0;
@@ -13,7 +14,7 @@ body {
     /* Flex block for buttons */ 
     display: flex;
     flex-direction: row-reverse;
-    z-index: 1;
+    z-index: 2;
 }
 
 
@@ -38,10 +39,9 @@ body {
 }
 
 .container{
-    background-color: #470001;
-    padding-top:316px;
-    padding-bottom:316px;
-    z-index: -1;
+    background-color: #2774AE;
+    height: 100vh;
+    z-index: 1;
     text-align: center;
 }
 
@@ -61,6 +61,7 @@ body {
     font-style: bold;
     margin-bottom: 20px;
     animation: text 3s 1;
+    padding-top: 40vh;
 }
 
 @keyframes text {
@@ -74,7 +75,7 @@ body {
     font-size: 24px;
     font-weight: 400;
     font-family: century-gothic, sans-serif;;
-    color: #ff6961;
+    color: #D1B000;
     animation-name: altname;
     animation-duration: 3s;
 }
@@ -100,31 +101,44 @@ body {
 
 .main-box{
     background-color: #F6F6EB;
-    height:611.781px;
-    padding-bottom: 150px;
-    position: relative;
-    z-index: -2;
 }
 
 .self-photo{
     display: block;
-    margin-left: 60%;
-    margin-right: 40%;
-    position:absolute;
-    bottom: 150px;
-    width: 390px;
-    height: 380px;
+    position:relative;
+    left: 45vw;
+    bottom: 175px;
+    width: 290px;
+    height: 400px;
+}
+
+.dot {
+    border-bottom: 15px solid #88AED0;
+    height: 15px;
+    width: 15px;
+    position:sticky;
+    left: 24.80vw;
+    top: 30px;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.vl-top{
+    border-left: 10px solid #E7D27C;
+    height: 150px;
+    width: 20px;
+    position:relative;
+    left: 25vw;
+    z-index: 1;
 }
 
 .box{
-    height: 400px;
+    height: 410px;
     width: 65%;
     margin: auto;
+    position:relative;
     background-color: #DDDDD2;
-    position: relative;
-    top: 150px;
-    right:0;
-    z-index: -1;
+    z-index: 3;
 }
 
 #khmer-font{
@@ -163,7 +177,31 @@ body {
     font-family: 'Courier New', Courier, monospace;
     color: black;
     font-size: 14px;
-    text-align: right;
-    margin-top: 150px;
-    margin-right: 5px;
 }
+
+.vl{
+    border-left: 10px solid #E7D27C;
+    height: 300px;
+    width: 20px;
+    position:relative;
+    left: 25vw;
+}
+
+.box1{
+    height: 400px;
+    width: 65%;
+    margin: auto;
+    position:relative;
+    background-color: #DDDDD2;
+    z-index: 3;
+    margin-bottom: 150px;
+}
+
+.head2{
+    font-family: century-gothic, sans-serif;;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+/*<p​ class = "float-txt"> *** <b>"សូមជុំរាបសួរ!"</b> is translated as "HELLO!" </p>*/
