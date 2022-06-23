@@ -204,4 +204,12 @@ body {
     font-size: 25px;
 }
 
+@media screen and (max-width: 300px) { 
+    .self-photo{
+        width: 100px;
+        height: 110px;
+    }  
+
+}
+
 /*<p​ class = "float-txt"> *** <b>"សូមជុំរាបសួរ!"</b> is translated as "HELLO!" </p>*/
