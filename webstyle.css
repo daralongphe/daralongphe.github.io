@@ -214,8 +214,8 @@ body.dark{
 }
 
 .box1{
-
     width: 65%;
+    height: 880px;
     margin: auto;
     position:relative;
     background-color: #DDDDD2;
@@ -238,5 +238,6 @@ body.dark{
     position:relative;
     bottom: 10px;
 }
+
 
 /*<p​ class = "float-txt"> *** <b>"សូមជុំរាបសួរ!"</b> is translated as "HELLO!" </p>*/
