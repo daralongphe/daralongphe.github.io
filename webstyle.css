@@ -2,6 +2,9 @@ body {
     margin:0;
     background-color: #F6F6EB;
 }
+body.dark{
+    background-color: #383838;
+}
 
 .nav-bar {
     background-color: rgba(0,0,0,0.6);
@@ -99,8 +102,24 @@ body {
     }
 }
 
-.main-box{
+#main-box{
     background-color: #F6F6EB;
+}
+#main-box.dark{
+    background-color: #383838;
+}
+
+#theme{
+    width: 50px;
+    height:50px;
+    font-size: larger;
+    border-width: 0px;
+    border-bottom-right-radius: 25%;
+    background-color: #383838;
+}
+#theme.dark{
+    background-color: #F6F6EB;
+    content: "🔆";
 }
 
 .self-photo{
@@ -110,6 +129,13 @@ body {
     bottom: 175px;
     width: 290px;
     height: 400px;
+}
+
+@media screen and (max-width: 300px) { 
+    .self-photo{
+        width: 100px;
+        height: 110px;
+    }  
 }
 
 .dot {
@@ -170,7 +196,7 @@ body {
     color: black;
     font-size: 15px;
     position: relative;
-    left: 30px;
+    margin: 30px 30px;
 }
 
 .float-txt{
@@ -188,28 +214,29 @@ body {
 }
 
 .box1{
-    height: 400px;
+
     width: 65%;
     margin: auto;
     position:relative;
     background-color: #DDDDD2;
     z-index: 4;
-    margin-bottom: 150px;
 }
 
-.head2{
+#head2{
+    height: 30px;
     font-family: century-gothic, sans-serif;;
     text-align: center;
     color: black;
     font-size: 25px;
 }
+#head2.dark{
+    color: white;
+}
 
-@media screen and (max-width: 300px) { 
-    .self-photo{
-        width: 100px;
-        height: 110px;
-    }  
-
+.angkor{
+    width: 100px;
+    position:relative;
+    bottom: 10px;
 }
 
 /*<p​ class = "float-txt"> *** <b>"សូមជុំរាបសួរ!"</b> is translated as "HELLO!" </p>*/

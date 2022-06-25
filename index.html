@@ -9,8 +9,6 @@
         <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     </head>
     <body>
-
-
         <div class = "container">
             <div class = "nav-bar">
                 <a href = "https://www.linkedin.com/in/chandaralong-phe/" target="_blank" class = "button-box">
@@ -33,7 +31,23 @@
             <span class = "nickname">"ផែ ច័ន្ទតារាឡុង"</span>
         </div>
 
-        <div class = "main-box">
+        <div id= "main-box">
+            <button id = "theme">🌙</button>
+            <script>
+                document.getElementById("theme").addEventListener("click", e => {
+                    document.getElementById("main-box").classList.toggle("dark");
+                    document.getElementById("head2").classList.toggle("dark");
+                    document.body.classList.toggle("dark");
+                    document.getElementById("theme").classList.toggle("dark");
+                    var themeTXT = document.getElementById("theme");
+                    if (themeTXT.innerHTML === "🌙") {
+                        themeTXT.innerHTML = "🔆";
+                    }
+                    else {
+                        themeTXT.innerHTML = "🌙";
+                    }
+                });
+            </script>
             <div class="dot"></div>
             <div class="vl-top"></div>
             <div class = "box">
@@ -46,17 +60,20 @@
             </div>
             <div class="vl"></div>
             <div class = "box1">
-                <h1 class="head1"> PROJECTS: <br><br> </h1>
-                <p class="txt1"> <b>+</b> Coming Soon </p> 
+                <h1 class="head1"> BACKGROUND: <br><br> </h1>
+                <p class="txt1"> A majestic empire stood deep in the wilderness of Cambodia once possessed unparalleled technologies beyond its time. A technology so sophisticated, it built and prospered a unique civilization of the world’s largest pre-industrial city, Angkor. Spanned over six centuries, the empire fell victim to wars as Angkor was sacked and abandoned. Arts were lost, and souls died. The attempt in reviving the soul of the ancient Khmer civilization during the post-independence Cambodia saw growth in splendid western-influenced styles of Khmer arts and engineering, however, the efforts were once again consumed by wars, notably, under the reign of Khmer Rouge. As a descendant to the barely survived heritages, I sense a calling of my soul to return back to the root of our ancestors, the Great Builders in the name of Khmer who had not just created but perfected the art of creation. </p>
+                <p class="txt1"> The wonder of 21st-century technology unearths the mystery of the past. The Internet brings forth archives of information that I spent time researching as a child. Intrigued by the site of Angkor, I dropped by the internet café to investigate the ancient civilization. It was then that I discovered that Khmers once acquired great powers of knowledge to achieve the impossible. At that moment, I felt as proud to be Khmer as the way many Americans felt when the United States first landed on the moon. Simultaneously, I sensed sorrow for the horrible loss of our great minds and treasures, but nothing can be compared to the inspiration that blossomed into a dream of becoming a great inventor myself. Amazed by the information found, I only became more curious about how such information was obtained and established onto the internet. My discovery of what the internet can do certainly sparked my quest to pursue modern technology as an outlet for my creation. Not only it has revolutionized the way we create, but also the way we think as it helped me connect the dots revealing the flaw behind a fallen empire. Even though the Khmers had the skills to engineer the changes to the environment, those changes disrupted the cycle of nature that backfired into disastrous climate change events leading to the decline of a nation. Therefore, engineers don’t just create, they also innovate. </p>  
+                <p class="txt1"> Reality as defined by Albert Einstein “is a process of our thinking” to which he added, “it cannot be changed without changing our thinking”. My educational journey to becoming a software developer relies heavily on the understanding of philosophy as I do believe that perspective is an important aspect to identify a problem. As a learner, I strive to construct a mindset by tapping into the mind of educators in order to understand the nature behind their thought processes. By doing so, I realize that to fully comprehend a concept, I must seek others who ask the questions that I don’t. The idea inspired me to become an educator tutoring math ever since high school for the purpose of identifying the distinct ways students process the same information, which got me into the habit of apprehending things with simpler analogies for better understanding. At the same time, it also made me aware of the different perspectives that I have never thought of to which further expand my capability in identifying mistakes and problems. </p>
+                <p class="txt1"> As a concept, software is a thought process laid down in programming languages with an aim to command machines to perform a task. To an extent, programmers are commanders of machines, and it’s my goal as one to artistically utilize machines for innovation. With years’ worth of experience in critical-thinking skill development along with the knowledge I obtain about machines and their languages, I’m currently constructing a digital portfolio webpage to showcase my past projects when applying for an internship/junior position at tech companies. In doing so, I can guarantee that I will endure enough industrial experiences needed in addition to my education at UCLA to be a skilled developer. </p>   
+                <center><img src="image/Angkor.png" alt="Khmer Pride" class="angkor" ></center>
             </div>
+            <div class="vl"></div>
+            <div class = "box">
+                <h1 class="head1"> PROJECTS: <br><br> </h1>
+                <p class="txt1"> + Coming Soon. </p>
+            </div>
+            <hr id = "main-box">
+            <h1 id="head2"> Made By Dylan Phe </h1>
         </div>
-        <hr>
-        <div class = "main-box">
-            <h1 class="head2"> Made By Dylan Phe <br><br> </h1>
-            
-        </div>
-
-
-        
     </body>
 </html>
