@@ -3,6 +3,7 @@ body {
     background-color: #F6F6EB;
 }
 body.dark{
+    transition: background-color 1s ease-out;
     background-color: #383838;
 }
 
@@ -103,9 +104,11 @@ body.dark{
 }
 
 #main-box{
+    transition: background-color 1s ease-out;
     background-color: #F6F6EB;
 }
 #main-box.dark{
+    transition: background-color 1s ease-out;
     background-color: #383838;
 }
 
@@ -119,7 +122,6 @@ body.dark{
 }
 #theme.dark{
     background-color: #F6F6EB;
-    content: "🔆";
 }
 
 .self-photo{
@@ -192,7 +194,7 @@ body.dark{
 }
 
 .txt1{
-    font-family: century-gothic, sans-serif;;
+    font-family: century-gothic, sans-serif;
     color: black;
     font-size: 15px;
     position: relative;
@@ -238,5 +240,59 @@ body.dark{
     bottom: 10px;
 }
 
+#box2{
+    width: 65%;
+    padding-bottom: 30px;
+    margin: auto;
+    position:relative;
+    background-color: #DDDDD2;
+    z-index: 3;
+}
 
-/*<p​ class = "float-txt"> *** <b>"សូមជុំរាបសួរ!"</b> is translated as "HELLO!" </p>*/
+#coursebtn{
+    font-family: century-gothic, sans-serif;
+    color: black;
+    background-color: #DDDDD2;
+    border-style: none;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    margin-left: 50px;
+    width:auto;
+    text-decoration: underline ;
+    text-decoration-color: #2774AE;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+#csList{
+    width: 65%;
+    display: none;
+    background-color: #DDDDD2;
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#eceList{
+    width: 65%;
+    display: none;
+    background-color: #DDDDD2;
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#mathList{
+    width: 65%;
+    display: none;
+    background-color: #DDDDD2;
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+

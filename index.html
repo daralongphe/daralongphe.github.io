@@ -46,6 +46,7 @@
                     else {
                         themeTXT.innerHTML = "🌙";
                     }
+                
                 });
             </script>
             <div class="dot"></div>
@@ -60,7 +61,7 @@
             </div>
             <div class="vl"></div>
             <div class = "box1">
-                <h1 class="head1"> BACKGROUND: <br><br> </h1>
+                <h1 class="head1"> ENGINEERING BACKGROUND: <br><br> </h1>
                 <p class="txt1"> A majestic empire stood deep in the wilderness of Cambodia once possessed unparalleled technologies beyond its time. A technology so sophisticated, it built and prospered a unique civilization of the world’s largest pre-industrial city, Angkor. Spanned over six centuries, the empire fell victim to wars as Angkor was sacked and abandoned. Arts were lost, and souls died. The attempt in reviving the soul of the ancient Khmer civilization during the post-independence Cambodia saw growth in splendid western-influenced styles of Khmer arts and engineering, however, the efforts were once again consumed by wars, notably, under the reign of Khmer Rouge. As a descendant to the barely survived heritages, I sense a calling of my soul to return back to the root of our ancestors, the Great Builders in the name of Khmer who had not just created but perfected the art of creation. </p>
                 <p class="txt1"> The wonder of 21st-century technology unearths the mystery of the past. The Internet brings forth archives of information that I spent time researching as a child. Intrigued by the site of Angkor, I dropped by the internet café to investigate the ancient civilization. It was then that I discovered that Khmers once acquired great powers of knowledge to achieve the impossible. At that moment, I felt as proud to be Khmer as the way many Americans felt when the United States first landed on the moon. Simultaneously, I sensed sorrow for the horrible loss of our great minds and treasures, but nothing can be compared to the inspiration that blossomed into a dream of becoming a great inventor myself. Amazed by the information found, I only became more curious about how such information was obtained and established onto the internet. My discovery of what the internet can do certainly sparked my quest to pursue modern technology as an outlet for my creation. Not only it has revolutionized the way we create, but also the way we think as it helped me connect the dots revealing the flaw behind a fallen empire. Even though the Khmers had the skills to engineer the changes to the environment, those changes disrupted the cycle of nature that backfired into disastrous climate change events leading to the decline of a nation. Therefore, engineers don’t just create, they also innovate. </p>  
                 <p class="txt1"> Reality as defined by Albert Einstein “is a process of our thinking” to which he added, “it cannot be changed without changing our thinking”. My educational journey to becoming a software developer relies heavily on the understanding of philosophy as I do believe that perspective is an important aspect to identify a problem. As a learner, I strive to construct a mindset by tapping into the mind of educators in order to understand the nature behind their thought processes. By doing so, I realize that to fully comprehend a concept, I must seek others who ask the questions that I don’t. The idea inspired me to become an educator tutoring math ever since high school for the purpose of identifying the distinct ways students process the same information, which got me into the habit of apprehending things with simpler analogies for better understanding. At the same time, it also made me aware of the different perspectives that I have never thought of to which further expand my capability in identifying mistakes and problems. </p>
@@ -68,9 +69,79 @@
                 <center><img src="image/Angkor.png" alt="Khmer Pride" class="angkor" ></center>
             </div>
             <div class="vl"></div>
+            <div id= "box2">
+                <h1 class="head1"> EDUCATION: <br><br> </h1>
+                <p class="txt1"> Currently, I'm an undergraduate at University of California, Los Angeles, (UCLA) pursuing a B.S. degree in Computer Science. I'm a transfer student from Long Beach City College (LBCC) to which I graduated with two A.S. degrees in Computer Science and Physical Science in 2021. Prior to this, I grew up and went to Western International High School in Phnom Penh, Cambodia before I immigrated to the United States of America in 2019. </p>
+                <p class="txt1"> <b>Courseworks taken at UCLA:</b> </p>
+                <button id="coursebtn" onclick="showCS()"> Computer Science </button>
+                <div id="csList">
+                    <ul>
+                        <li> Intro to Computer Science (CS 31) </li>
+                        <li> Data Structures (CS 32) </li>
+                        <li> Intro to Computer Architecture (CS 33) </li>
+                        <li> Logic Design of Digital System (CS M51A) </li>
+                        <li> Programming Languages (CS 131) </li>
+                        <li> Operating Systems (CS 111) </li>
+                        <li> Software Construction (CS 35L) </li>
+                        <li> Computer Systems Architecture (CSM 152B) </li>
+                        <li> Algorithm & Complexity (CS 180) </li>
+                        <li> More courses to be taken.  </li>
+                    </ul>
+                </div>
+                <br>
+                <button id="coursebtn" onclick="showECE()"> Electrical and Computer Engineering </button>
+                <div id="eceList">
+                    <ul>
+                        <li> Intro to Electrical Engineering (ECE 3) </li>
+                        <li> Electrical and Electronic Circuits (ECE 100)  </li>
+                        <li> More courses to be taken.  </li>
+                    </ul>
+                </div>
+                <br>
+                <button id="coursebtn" onclick="showMATH()"> Mathematics </button>
+                <div id="mathList">
+                    <ul>
+                        <li> Single-Variable Calculus (MATH 31A/B) </li>
+                        <li> Multivariable Calculus (MATH 32A/B)  </li>
+                        <li> Linear Algebra (MATH 33A)  </li>
+                        <li> Differential Equations (MATH 33B)  </li>
+                        <li> Intro to Discrete Math (MATH 61)  </li>
+
+                    </ul>
+                </div>
+
+                <script>
+                    var x = document.getElementById("csList");
+                    var y = document.getElementById("eceList");
+                    var z = document.getElementById("mathList")
+                    function showCS() {
+                        if (x.style.display === "block") {
+                            x.style.display = "none";
+                        } else {
+                            x.style.display = "block";
+                        }
+                    }
+                    function showECE() {
+                        if (y.style.display === "block") {
+                            y.style.display = "none";
+                        } else {
+                            y.style.display = "block";
+                        }
+                    }
+                    function showMATH() {
+                        if (z.style.display === "block") {
+                            z.style.display = "none";
+                        } else {
+                            z.style.display = "block";
+                        }
+                    }
+                </script>
+                
+            </div>
+            <div class="vl"></div>
             <div class = "box">
                 <h1 class="head1"> PROJECTS: <br><br> </h1>
-                <p class="txt1"> + Coming Soon. </p>
+                <p class="txt1"> Wordle Plus </p>
             </div>
             <hr id = "main-box">
             <h1 id="head2"> Made By Dylan Phe </h1>
