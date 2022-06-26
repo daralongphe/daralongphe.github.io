@@ -140,7 +140,7 @@ body.dark{
     }  
 }
 
-.dot {
+#dot {
     border-bottom: 15px solid #88AED0;
     height: 15px;
     width: 15px;
@@ -151,7 +151,7 @@ body.dark{
     z-index: 2;
 }
 
-.vl-top{
+#vl-top{
     border-left: 10px solid #E7D27C;
     height: 150px;
     width: 20px;
@@ -160,7 +160,7 @@ body.dark{
     z-index: 1;
 }
 
-.box{
+#box{
     height: 410px;
     width: 65%;
     margin: auto;
@@ -207,16 +207,16 @@ body.dark{
     font-size: 14px;
 }
 
-.vl{
+#vl{
     border-left: 10px solid #E7D27C;
-    height: 300px;
+    height: 200px;
     width: 20px;
     position:relative;
     left: 25vw;
     z-index: 1;
 }
 
-.box1{
+#box1{
     width: 65%;
     margin: auto;
     position:relative;
@@ -294,4 +294,126 @@ body.dark{
     color: black;
     font-size: 15px;
     margin-left: 30px;
+}
+
+#achievementList{
+    width: 65%;
+    background-color: #DDDDD2;
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#box-bottom{
+    width: 65%;
+    margin: auto;
+    position:relative;
+    background-color: #DDDDD2;
+    z-index: 3;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+
+#p-link{
+    color:#2774AE;
+}
+
+#box2{
+    width: 65%;
+    padding-bottom: 30px;
+    margin: auto;
+    position:relative;
+    background-color: #DDDDD2;
+    z-index: 3;
+}
+
+#vl-short{
+    border-left: 10px solid #E7D27C;
+    height: 100px;
+    width: 20px;
+    position:relative;
+    left: 25vw;
+    z-index: 1;
+}
+
+#box3{
+    width:290px;
+    height:365px;
+    left:17vw;
+    position:relative;
+    background-color: transparent;
+    z-index: 3;
+}
+
+#painting-des{
+    width: 150px;
+    background-color: #DDDDD2;
+    position: relative;
+    left: 270px;
+    bottom: 350px;
+    z-index: 7;
+    text-align: right;
+}
+
+#s-painting-des{
+    width: 150px;
+    background-color: #DDDDD2;
+    position: relative;
+    left: 270px;
+    bottom: 275px;
+    z-index: 7;
+    text-align: right;
+}
+
+#p-txt{
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    position: relative;
+    margin-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#p-painting{
+    display: block;
+    position:relative;
+    width: 290px;
+    height: 365px;
+    z-index: 6;
+}
+
+#box4{
+    width:290px;
+    height:290px;
+    left:17vw;
+    position:relative;
+    background-color: transparent;
+    z-index: 3;
+}
+
+#s-painting{
+    display: block;
+    position:relative;
+    width: 290px;
+    height: 290px;
+    z-index: 6;
+}
+
+@media screen and (max-width: 300px) { 
+    #roomie{
+        width: 100px;
+        height: 110px;
+    }  
+}
+
+#vl-bottom{
+    border-left: 10px solid #E7D27C;
+    height: 150px;
+    width: 20px;
+    position:relative;
+    left: 25vw;
+    z-index: 1;
+    margin-bottom: 100px;
 }
