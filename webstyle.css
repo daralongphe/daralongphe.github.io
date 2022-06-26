@@ -213,6 +213,7 @@ body.dark{
     width: 20px;
     position:relative;
     left: 25vw;
+    z-index: 1;
 }
 
 .box1{
