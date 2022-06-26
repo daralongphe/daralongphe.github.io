@@ -177,7 +177,7 @@ body.dark{
     
 }
 
-.head1{
+#head1{
     font-family: century-gothic, sans-serif;;
     color: black;
     font-size: 25px;
@@ -193,7 +193,7 @@ body.dark{
     grid-template-columns: auto 40%;
 }
 
-.txt1{
+#txt1{
     font-family: century-gothic, sans-serif;
     color: black;
     font-size: 15px;
