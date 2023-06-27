@@ -1,10 +1,10 @@
 body {
     margin:0;
-    background-color: #F6F6EB;
-}
-body.dark{
-    transition: background-color 1s ease-out;
     background-color: #383838;
+}
+body.light{
+    transition: background-color 1s ease-out;
+    background-color: #F6F6EB;
 }
 
 .nav-bar {
@@ -105,11 +105,11 @@ body.dark{
 
 #main-box{
     transition: background-color 1s ease-out;
-    background-color: #F6F6EB;
-}
-#main-box.dark{
-    transition: background-color 1s ease-out;
     background-color: #383838;
+}
+#main-box.light{
+    transition: background-color 1s ease-out;
+    background-color: #F6F6EB;
 }
 
 #theme{
@@ -118,10 +118,10 @@ body.dark{
     font-size: larger;
     border-width: 0px;
     border-bottom-right-radius: 25%;
-    background-color: #383838;
-}
-#theme.dark{
     background-color: #F6F6EB;
+}
+#theme.light{
+    background-color: #383838;
 }
 
 .self-photo{
@@ -133,11 +133,13 @@ body.dark{
     height: 400px;
 }
 
+
 @media screen and (max-width: 300px) { 
     .self-photo{
         width: 100px;
         height: 110px;
-    }  
+    } 
+    
 }
 
 #dot {
@@ -229,11 +231,11 @@ body.dark{
     height: 30px;
     font-family: century-gothic, sans-serif;;
     text-align: center;
-    color: black;
+    color: white;
     font-size: 25px;
 }
-#head2.dark{
-    color: white;
+#head2.light{
+    color: black;
 }
 
 .angkor{
@@ -288,6 +290,16 @@ body.dark{
 }
 
 #mathList{
+    width: 65%;
+    display: none;
+    background-color: #DDDDD2;
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+#physicsList{
     width: 65%;
     display: none;
     background-color: #DDDDD2;
@@ -383,6 +395,11 @@ body.dark{
     width: 290px;
     height: 365px;
     z-index: 6;
+}
+
+#bruins-logo{
+    width: 300px;
+    height: 168px;
 }
 
 #box4{

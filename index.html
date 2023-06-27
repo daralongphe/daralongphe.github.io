@@ -29,16 +29,19 @@
             </div>
             <span class = "name">DYLAN PHE</span>
             <span class = "nickname">"ផែ ច័ន្ទតារាឡុង"</span>
+            <span class = "b-logo">
+                <img src="image\bruins_logo.png" id="bruins-logo" >
+            </span>
         </div>
 
         <div id= "main-box">
-            <button id = "theme">🌙</button>
+            <button id = "theme">🔆</button>
             <script>
                 document.getElementById("theme").addEventListener("click", e => {
-                    document.getElementById("main-box").classList.toggle("dark");
-                    document.getElementById("head2").classList.toggle("dark");
-                    document.body.classList.toggle("dark");
-                    document.getElementById("theme").classList.toggle("dark");
+                    document.getElementById("main-box").classList.toggle("light");
+                    document.getElementById("head2").classList.toggle("light");
+                    document.body.classList.toggle("light");
+                    document.getElementById("theme").classList.toggle("light");
                     var themeTXT = document.getElementById("theme");
                     if (themeTXT.innerHTML === "🌙") {
                         themeTXT.innerHTML = "🔆";
@@ -71,7 +74,33 @@
             <div id= "box2">
                 <h1 id="head1"> EDUCATION: <br><br> </h1>
                 <p id="txt1"> Currently, I'm an undergraduate at University of California, Los Angeles, (UCLA) pursuing a B.S. degree in Computer Science. I'm a transfer student from Long Beach City College (LBCC) to which I graduated with two A.S. degrees in Computer Science and Physical Science in 2021. Prior to this, I grew up and went to <a href="http://www.western.edu.kh/" target="_blank" id="p-link">Western International High School </a> in Phnom Penh, Cambodia before I immigrated to the United States of America in 2019. </p>
-                <p id="txt1"> <b>Courseworks taken:</b> </p>
+                <p id="txt1"> <b>Courseworks taken: (Click on the subjects to expand)</b> </p>
+                
+                <button id="coursebtn" onclick="showMATH()"> Mathematics </button>
+                <div id="mathList">
+                    <ul>
+                        <li> Single-Variable Calculus (MATH 31A/B) </li>
+                        <li> Multivariable Calculus (MATH 32A/B)  </li>
+                        <li> Linear Algebra (MATH 33A)  </li>
+                        <li> Differential Equations (MATH 33B)  </li>
+                        <li> Introduction to Probability (STATS 100A) </li>
+                        <li> Intro to Discrete Math (MATH 61)  </li>
+                        <li> Linear and Nonlinear System of Differential Equations (MATH 134) </li>
+                        <li> Mathematical Modeling (MATH 142) </li>
+                        <li> Machine Learning (MATH 156) </li>
+                    </ul>
+                </div>
+                <br>
+                <button id="coursebtn" onclick="showPHYS()"> Physics for Scientists and Engineers </button>
+                <div id="physicsList">
+                    <ul>
+                        <li> Mechanics  (PHYSICS 1A) </li>
+                        <li> Fluids, Oscillations, Waves, and Electricity (PHYSICS 1B)  </li>
+                        <li> Magnetism, Electrodynamics, Optics, and Special Relativity (PHYSICS 1C) </li>
+                        <li> Physics Laboratory for Scientists and Engineers: Mechanics (PHYSICS 4AL)  </li>
+                    </ul>
+                </div>
+                <br>
                 <button id="coursebtn" onclick="showCS()"> Computer Science </button>
                 <div id="csList">
                     <ul>
@@ -79,12 +108,20 @@
                         <li> Data Structures (CS 32) </li>
                         <li> Intro to Computer Architecture (CS 33) </li>
                         <li> Logic Design of Digital System (CS M51A) </li>
-                        <li> Programming Languages (CS 131) </li>
-                        <li> Operating Systems (CS 111) </li>
-                        <li> Software Construction (CS 35L) </li>
+                        <li> Digitical Design Lab (CS M15AB) </li>
                         <li> Computer Systems Architecture (CS M152B) </li>
                         <li> Algorithm & Complexity (CS 180) </li>
-                        <li> More courses to be taken.  </li>
+                        <li> Formal Languages & Automata (CS 181) </li>
+                        <li> Software Construction (CS 35L) </li>
+                        <li> Operating Systems Principle (CS 111) </li>
+                        <li> Computer Network Fundamental (CS 118) </li>
+                        <li> Programming Languages (CS 131) </li>
+                        <li> Software Engineering (CS 130) </li>
+                        <li> Computer Security (CS 136) </li>
+                        <li> Data Management Systems (CS 143) </li>
+                        <li> Introduction to Data Mining (CS 145) </li>
+                        <li> Artificial Intelligence (CS 161) </li>
+                        <li> Introduction to Computer Graphics (CS 174A) </li>
                     </ul>
                 </div>
                 <br>
@@ -93,21 +130,10 @@
                     <ul>
                         <li> Intro to Electrical Engineering (ECE 3) </li>
                         <li> Electrical and Electronic Circuits (ECE 100)  </li>
-                        <li> More courses to be taken.  </li>
+                        <li> Engineering Electromagnetics (ECE 101A)  </li>
                     </ul>
                 </div>
                 <br>
-                <button id="coursebtn" onclick="showMATH()"> Mathematics </button>
-                <div id="mathList">
-                    <ul>
-                        <li> Single-Variable Calculus (MATH 31A/B) </li>
-                        <li> Multivariable Calculus (MATH 32A/B)  </li>
-                        <li> Linear Algebra (MATH 33A)  </li>
-                        <li> Differential Equations (MATH 33B)  </li>
-                        <li> Intro to Discrete Math (MATH 61)  </li>
-
-                    </ul>
-                </div>
                 <p id="txt1"> <b>Achievements:</b> </p>
                 <ul id="achievementList">
                     <li> UCLA Louis Levoy Engineering Scholarship Recipient 2021-2022 </li>
@@ -121,7 +147,8 @@
                 <script>
                     var x = document.getElementById("csList");
                     var y = document.getElementById("eceList");
-                    var z = document.getElementById("mathList")
+                    var z = document.getElementById("mathList");
+                    var a = document.getElementById("physicsList")
                     function showCS() {
                         if (x.style.display === "block") {
                             x.style.display = "none";
@@ -143,18 +170,43 @@
                             z.style.display = "block";
                         }
                     }
+                    function showPHYS() {
+                        if (a.style.display === "block") {
+                            a.style.display = "none";
+                        } else {
+                            a.style.display = "block";
+                        }
+                    }
                 </script>
             </div>
             <div id="vl"></div>
             <div id="box2">
                 <h1 id="head1"> PROJECTS: <br><br> </h1>
-                <p id="txt1"> <b>Wordle Plus 2022</b> </p>
-                <p id="txt1"> As a final project for the Software Construction class (CS 35L), I have recreated a prototype of the world famous "WORDLE" web application (officially run by The New York Times website). For the prototype, I implemented upon the original "WORDLE" app additional features that allow players to play the game with either four, five or six letters WORDLE and as many time per day as they would like. The project was supervised by Dr. Paul Eggert. </p>
+
+                <p id="txt1"> <b>BruinNotes (Awarded Best Project), 2023</b> </p>
+                <p id="txt1"> A centralized platform for sharing and archiving digital notes in UCLA courses, providing users with a simple yet feature-rich experience. After creating an account, a user can search for and add UCLA courses, and have a place to request and share notes. Users will also be able to like notes that they find helpful, and also leave comments or questions underneath them. On top of it being a space of sharing, it will also serve as an archive of digital notes for all UCLA courses. Ultimately, BruinNotes aims to provide a simple but featureful experience for its users, and to give students the tools they need to be successful. The project was supervised by Professor Miryung Kim in Software Engineering (CS 130) Course. </p>
+                <p id="txt1"> Link to the project <a href = "bruinnotes.pdf" target="_blank" id = "p-link"> <b> report </b> </a> and see the code <a href = "https://github.com/dylanphe/BruinNotes" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
+
+                <p id="txt1"> <b>Dodge (Computer Graphic Game), 2023</b> </p>
+                <p id="txt1">  Inspired by <a href = "https://www.lexaloffle.com/bbs/?pid=66443#p" target="_blank" id = "p-link"> <b> the video game of the same name by Atridge </b> </a>, the proposed project, Dodge, is a computer graphics game created with TinyGraphics based on the famous video game of the same name by Atridge created for the Pico-8 game engine in 2019. Although both games follow the same instruction in which a player is to stay alive as long as possible by dodging the blocks and accumulating more scores, our version of the game is a little different in terms of designs, controls and levels of difficulties. The project is supervised by Professor Asish Law in Computer Graphic (CS 174A) course.</p>
+                <p id="txt1"> Link to <a href = "https://dylanphe.github.io/dodge/" target="_blank" id = "p-link"> <b> Dodge </b> </a> and see the code <a href = "https://github.com/dylanphe/dodge" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
+
+                <p id="txt1"> <b>Security Evaluation of cURL 8.0.1, 2023</b> </p>
+                <p id="txt1"> Supervised by Professor Peter Reiher, our team uncovered four major security problems of curl 8.0.1 through web search, a code review using various automated tools to find potential undocumented flaws, followed by live testing in a virtual machine to produce a demonstration of the vulnerabilities. From our investigation, we found four main vulnerabilities and some security concerns in the automated tools’ reports. Overall, we concluded that curl is a fairly secure system, as the vulnerabilities are not too severe and the code does a sufficient job at handling edge cases and preventing unexpected failures. Generally any vulnerabilities that we did find were low impact and/or required very special conditions to exploit. </p>
+                <p id="txt1"> Link to the <a href = "sec_report.pdf" target="_blank" id = "p-link"> <b> FULL REPORT </b> </a> </p>
+
+                <p id="txt1"> <b>Machine Learning Models Analysis, Auto Plate Recognition, 2023</b> </p>
+                <p id="txt1"> The goal of our project focuses on using machine learning algorithms that we have learned in class and through further research to classify the State's names that appear on all license plates we obtained from the 50 U.S. States including Washington D.C. We aim to construct and train models that can effectively perform this classification task. The project involves comparing performances between different machine learning models, as well as taking into account their complexity, training times, and memory efficiency. The metrics we intend to use for our models evaluation and comparison include F1 Scores and accuracy. In addition, we train and test the performance of these algorithms on a dataset of diverse license plate images with varying lighting conditions, quality and sizes. </p>
+                <p id="txt1"> Link to the <a href = "ml_report.pdf" target="_blank" id = "p-link"> <b> REPORT </b> </a> and see the Jupyter Notebook <a href = "https://github.com/dylanphe/auto-plate-detector" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
+
+                <p id="txt1"> <b>Wordle Plus, 2022</b> </p>
+                <p id="txt1"> As a final project for the Software Construction class (CS 35L), I have recreated a prototype of the world famous "WORDLE" web application (officially run by The New York Times website). For the prototype, I implemented upon the original "WORDLE" app additional features that allow players to play the game with either four, five or six letters WORDLE and as many time per day as they would like. The project was supervised by Dr. Paul Eggert for Software Construction (CS 35L) course. </p>
                 <p id="txt1"> Link to <a href = "https://dylanphe.github.io/werdle/" target="_blank" id = "p-link"> <b> Wordle Plus</b> </a> and see the code <a href = "https://github.com/dylanphe/werdle" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
                 
-                <p id="txt1"> <b>Line Following Arduino Car 2021</b> </p>
-                <p id="txt1">  In the Intro to Electrical Engineering class's lab (ECE 3), I and my teammate were provided with a <a href = "https://dylanphe.github.io/werdle/" target="_blank" id = "p-link"> <b>TI-RSLK</b> </a> car to which we have partially reconfigured by fusing in phototransistors as sensors to detect the changes in light reflected from the surface of the customized line track. We also reprogrammed the sensor fused car to allow autotnomous navigation through the line track using Arduino software. The project was supervised by Dr. Dennise M. Briggs. </p>
+                <p id="txt1"> <b>Line Following Arduino Car, 2021</b> </p>
+                <p id="txt1"> In the Intro to Electrical Engineering class's lab (ECE 3), I and my teammate were provided with a <a href = "https://www.ti.com/lit/ml/sekp166/sekp166.pdf?ts=1687840742235" target="_blank" id = "p-link"> <b>TI-RSLK</b> </a> car to which we have partially reconfigured by fusing in phototransistors as sensors to detect the changes in light reflected from the surface of the customized line track. We also reprogrammed the sensor fused car to allow autotnomous navigation through the line track using Arduino software. The project was supervised by Dr. Dennise M. Briggs. </p>
                 <p id="txt1"> Link to the demonstration video of the <a href = "https://drive.google.com/file/d/1ebwFpd3HXM6A1DzIheHj25fzP0Mb7uSV/view?usp=sharing" target="_blank" id = "p-link"> <b> line following arduino car project </b> </a> and see the code <a href = "https://github.com/dylanphe/Arduino-car" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
+
             </div>
 
             <div id="vl"></div>
