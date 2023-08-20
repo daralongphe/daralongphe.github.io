@@ -85,7 +85,7 @@
                         <li> Differential Equations (MATH 33B)  </li>
                         <li> Introduction to Probability (STATS 100A) </li>
                         <li> Intro to Discrete Math (MATH 61)  </li>
-                        <li> Linear and Nonlinear System of Differential Equations (MATH 134) </li>
+                        <li> Nonlinear Dynamic and Chaos (MATH 134) </li>
                         <li> Mathematical Modeling (MATH 142) </li>
                         <li> Machine Learning (MATH 156) </li>
                     </ul>
@@ -108,7 +108,7 @@
                         <li> Data Structures (CS 32) </li>
                         <li> Intro to Computer Architecture (CS 33) </li>
                         <li> Logic Design of Digital System (CS M51A) </li>
-                        <li> Digitical Design Lab (CS M15AB) </li>
+                        <li> Digital Design Lab (CS M15AB) </li>
                         <li> Computer Systems Architecture (CS M152B) </li>
                         <li> Algorithm & Complexity (CS 180) </li>
                         <li> Formal Languages & Automata (CS 181) </li>
@@ -134,6 +134,13 @@
                     </ul>
                 </div>
                 <br>
+                <button id="coursebtn" onclick="showENGR()"> Engineering Ethics </button>
+                <div id="engrList">
+                    <ul>
+                        <li> Engineering and Society  (ENGR 183EW) </li>
+                    </ul>
+                </div>
+                <br>
                 <p id="txt1"> <b>Achievements:</b> </p>
                 <ul id="achievementList">
                     <li> UCLA Louis Levoy Engineering Scholarship Recipient 2021-2022 </li>
@@ -149,6 +156,7 @@
                     var y = document.getElementById("eceList");
                     var z = document.getElementById("mathList");
                     var a = document.getElementById("physicsList")
+                    var b = document.getElementById("engrList")
                     function showCS() {
                         if (x.style.display === "block") {
                             x.style.display = "none";
@@ -177,6 +185,13 @@
                             a.style.display = "block";
                         }
                     }
+                    function showENGR() {
+                        if (b.style.display === "block") {
+                            b.style.display = "none";
+                        } else {
+                            b.style.display = "block";
+                        }
+                    }
                 </script>
             </div>
             <div id="vl"></div>
@@ -184,15 +199,15 @@
                 <h1 id="head1"> PROJECTS: <br><br> </h1>
 
                 <p id="txt1"> <b>BruinNotes (Awarded Best Project), 2023</b> </p>
-                <p id="txt1"> A centralized platform for sharing and archiving digital notes in UCLA courses, providing users with a simple yet feature-rich experience. After creating an account, a user can search for and add UCLA courses, and have a place to request and share notes. Users will also be able to like notes that they find helpful, and also leave comments or questions underneath them. On top of it being a space of sharing, it will also serve as an archive of digital notes for all UCLA courses. Ultimately, BruinNotes aims to provide a simple but featureful experience for its users, and to give students the tools they need to be successful. The project was supervised by Professor Miryung Kim in Software Engineering (CS 130) Course. </p>
+                <p id="txt1"> A centralized platform for sharing and archiving digital notes in UCLA courses, providing users with a simple yet feature-rich experience. After creating an account, a user can search for and add UCLA courses, and have a place to request and share notes. Users will also be able to like notes that they find helpful and also leave comments or questions underneath them. On top of it being a space for sharing, it will also serve as an archive of digital notes for all UCLA courses. Ultimately, BruinNotes aims to provide a simple but featureful experience for its users and to give students the tools they need to be successful. The project was supervised by Professor Miryung Kim in Software Engineering (CS 130) Course.  </p>
                 <p id="txt1"> Link to the project <a href = "bruinnotes.pdf" target="_blank" id = "p-link"> <b> report </b> </a> and see the code <a href = "https://github.com/dylanphe/BruinNotes" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
 
                 <p id="txt1"> <b>Dodge (Computer Graphic Game), 2023</b> </p>
-                <p id="txt1">  Inspired by <a href = "https://www.lexaloffle.com/bbs/?pid=66443#p" target="_blank" id = "p-link"> <b> the video game of the same name by Atridge </b> </a>, the proposed project, Dodge, is a computer graphics game created with TinyGraphics based on the famous video game of the same name by Atridge created for the Pico-8 game engine in 2019. Although both games follow the same instruction in which a player is to stay alive as long as possible by dodging the blocks and accumulating more scores, our version of the game is a little different in terms of designs, controls and levels of difficulties. The project is supervised by Professor Asish Law in Computer Graphic (CS 174A) course.</p>
+                <p id="txt1">  Inspired by <a href = "https://www.lexaloffle.com/bbs/?pid=66443#p" target="_blank" id = "p-link"> <b> the video game of the same name by Atridge </b> </a>, the proposed project, Dodge, is a computer graphics game created with TinyGraphics based on the famous video game of the same name by Atridge created for the Pico-8 game engine in 2019. Although both games follow the same instruction in which a player is to stay alive as long as possible by dodging the blocks and accumulating more scores, our version of the game is a little different in terms of designs, controls, and levels of difficulty. The project is supervised by Professor Asish Law in Computer Graphics (CS 174A) course.</p>
                 <p id="txt1"> Link to <a href = "https://dylanphe.github.io/dodge/" target="_blank" id = "p-link"> <b> Dodge </b> </a> and see the code <a href = "https://github.com/dylanphe/dodge" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
 
                 <p id="txt1"> <b>Security Evaluation of cURL 8.0.1, 2023</b> </p>
-                <p id="txt1"> Supervised by Professor Peter Reiher, our team uncovered four major security problems of curl 8.0.1 through web search, a code review using various automated tools to find potential undocumented flaws, followed by live testing in a virtual machine to produce a demonstration of the vulnerabilities. From our investigation, we found four main vulnerabilities and some security concerns in the automated tools’ reports. Overall, we concluded that curl is a fairly secure system, as the vulnerabilities are not too severe and the code does a sufficient job at handling edge cases and preventing unexpected failures. Generally any vulnerabilities that we did find were low impact and/or required very special conditions to exploit. </p>
+                <p id="txt1"> Supervised by Professor Peter Reiher, our team uncovered four major security problems of curl 8.0.1 through web searches, a code review using various automated tools to find potential undocumented flaws, followed by live testing in a virtual machine to produce a demonstration of the vulnerabilities. From our investigation, we found four main vulnerabilities and some security concerns in the automated tools’ reports. Overall, we concluded that curl is a fairly secure system, as the vulnerabilities are not too severe and the code does a sufficient job of handling edge cases and preventing unexpected failures. Generally, any vulnerabilities that we did find were low impact and/or required very special conditions to exploit. </p>
                 <p id="txt1"> Link to the <a href = "sec_report.pdf" target="_blank" id = "p-link"> <b> FULL REPORT </b> </a> </p>
 
                 <p id="txt1"> <b>Machine Learning Models Analysis, Auto Plate Recognition, 2023</b> </p>
@@ -200,11 +215,11 @@
                 <p id="txt1"> Link to the <a href = "ml_report.pdf" target="_blank" id = "p-link"> <b> REPORT </b> </a> and see the Jupyter Notebook <a href = "https://github.com/dylanphe/auto-plate-detector" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
 
                 <p id="txt1"> <b>Wordle Plus, 2022</b> </p>
-                <p id="txt1"> As a final project for the Software Construction class (CS 35L), I have recreated a prototype of the world famous "WORDLE" web application (officially run by The New York Times website). For the prototype, I implemented upon the original "WORDLE" app additional features that allow players to play the game with either four, five or six letters WORDLE and as many time per day as they would like. The project was supervised by Dr. Paul Eggert for Software Construction (CS 35L) course. </p>
+                <p id="txt1"> As a final project for the Software Construction class (CS 35L), I have recreated a prototype of the world-famous "WORDLE" web application (officially run by The New York Times website). For the prototype, I implemented upon the original "WORDLE" app additional features that allow players to play the game with either four, five, or six letters WORDLE and as many times per day as they would like. The project was supervised by Dr. Paul Eggert for Software Construction (CS 35L) course. </p>
                 <p id="txt1"> Link to <a href = "https://dylanphe.github.io/werdle/" target="_blank" id = "p-link"> <b> Wordle Plus</b> </a> and see the code <a href = "https://github.com/dylanphe/werdle" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
                 
                 <p id="txt1"> <b>Line Following Arduino Car, 2021</b> </p>
-                <p id="txt1"> In the Intro to Electrical Engineering class's lab (ECE 3), I and my teammate were provided with a <a href = "https://www.ti.com/lit/ml/sekp166/sekp166.pdf?ts=1687840742235" target="_blank" id = "p-link"> <b>TI-RSLK</b> </a> car to which we have partially reconfigured by fusing in phototransistors as sensors to detect the changes in light reflected from the surface of the customized line track. We also reprogrammed the sensor fused car to allow autotnomous navigation through the line track using Arduino software. The project was supervised by Dr. Dennise M. Briggs. </p>
+                <p id="txt1"> In the Intro to Electrical Engineering class's lab (ECE 3), I and my teammate were provided with a <a href = "https://www.ti.com/lit/ml/sekp166/sekp166.pdf?ts=1687840742235" target="_blank" id = "p-link"> <b>TI-RSLK</b> </a> car, which we have partially reconfigured by fusing in phototransistors as sensors to detect the changes in light reflected from the surface of the customized line track. We also reprogrammed the sensor-fused car to allow autonomous navigation through the line track using Arduino software. The project was supervised by Dr. Dennise M. Briggs.</p>
                 <p id="txt1"> Link to the demonstration video of the <a href = "https://drive.google.com/file/d/1ebwFpd3HXM6A1DzIheHj25fzP0Mb7uSV/view?usp=sharing" target="_blank" id = "p-link"> <b> line following arduino car project </b> </a> and see the code <a href = "https://github.com/dylanphe/Arduino-car" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
 
             </div>

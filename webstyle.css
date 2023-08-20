@@ -309,6 +309,16 @@ body.light{
     margin-left: 30px;
 }
 
+#engrList{
+    width: 65%;
+    display: none;
+    background-color: #DDDDD2;
+    font-family: century-gothic, sans-serif;
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
 #achievementList{
     width: 65%;
     background-color: #DDDDD2;
