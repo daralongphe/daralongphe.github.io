@@ -1,275 +1,658 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dylan Phe's Portfolio</title>
-        <link href="webstyle.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Khmer&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
-    </head>
-    <body>
-        <div class = "container">
-            <div class = "nav-bar">
-                <a href = "https://www.linkedin.com/in/chandaralong-phe/" target="_blank" class = "button-box">
-                    LinkedIn
-                </a>
-                <a href = "https://github.com/dylanphe" target="_blank" class = "button-box">
-                    GitHub
-                </a>
-                <a href = "https://www.instagram.com/dylanphe/" target="_blank" class = "button-box">
-                    Instagram
-                </a>
-                <a href = "mailto:dylanphe.cs@gmail.com" class = "button-box"> 
-                    Email
-                </a>
-                <a href = "resume.pdf" target="_blank" class = "button-box"> 
-                    Resume
-                </a>
-            </div>
-            <span class = "name">DYLAN PHE</span>
-            <span class = "nickname">"ផែ ច័ន្ទតារាឡុង"</span>
-            <span class = "b-logo">
-                <img src="image\bruins_logo.png" id="bruins-logo" >
-            </span>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DYLAN PHE</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khmer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+</head>
+
+<body>
+
+    <div id="slide1" class="slide">
+        <div class = "s1_nav-bar">
+            <a href = "https://www.linkedin.com/in/chandaralong-phe/" target="_blank">
+                LinkedIn
+            </a>
+            <a href = "https://github.com/dylanphe" target="_blank">
+                GitHub
+            </a>
+            <a href = "https://www.instagram.com/dylanphe/" target="_blank">
+                Instagram
+            </a>
+            <a href = "mailto:dylanphe.cs@gmail.com"> 
+                Email
+            </a>
+            <a href = "resume.pdf" target="_blank"> 
+                Resume
+            </a>
         </div>
+        <span id = "s1_spacingText">DYLAN PHE</span>
+        <span id = "s1_dropDownText">"ផែ ច័ន្ទតារាឡុង"</span>
+        <span>
+            <img src="image\bruins_logo.png" id="bruins-logo" >
+        </span>
+    </div>
 
-        <div id= "main-box">
-            <button id = "theme">🔆</button>
-            <script>
-                document.getElementById("theme").addEventListener("click", e => {
-                    document.getElementById("main-box").classList.toggle("light");
-                    document.getElementById("head2").classList.toggle("light");
-                    document.body.classList.toggle("light");
-                    document.getElementById("theme").classList.toggle("light");
-                    var themeTXT = document.getElementById("theme");
-                    if (themeTXT.innerHTML === "🌙") {
-                        themeTXT.innerHTML = "🔆";
-                    }
-                    else {
-                        themeTXT.innerHTML = "🌙";
-                    }
-                
-                });
-            </script>
-            <div id="vl-top"></div>
-            <div id= "box">
-                <h1 id="head1"> SOME FACTS ABOUT ME: <br><br> </h1>
-                <p id="txt1"> <b>+</b> Born and raised in Cambodia <b>...សូមជុំរាបសួរ</b> </p> 
-                <p id="txt1"> <b>+</b> Currently residing in <b>Atlanta, Georgia</b> </p>
-                <p id="txt1"> <b>+</b> Completed my B.S. degree in Computer Science from UCLA.</p> 
-                <p id="txt1"> <b>+</b> Enjoy painting, filmmaking, and coding.</p>
-                <img src="image/Headshot.jpg" alt="dylan's photo" class = "self-photo">
-            </div>
-            <div id="vl"></div>
-            <div id = "box1">
-                <h1 id="head1"> ENGINEERING ROOT: <br><br> </h1>
-                <p id="txt1"> A majestic empire stood deep in the wilderness of Cambodia once possessed unparalleled technologies beyond its time. A technology so sophisticated, it built and prospered a unique civilization of the world’s largest pre-industrial city, Angkor. Spanned over six centuries, the empire fell victim to wars as Angkor was sacked and abandoned. Arts were lost, and souls died. The attempt in reviving the soul of the ancient Khmer civilization during the post-independence Cambodia saw growth in splendid western-influenced styles of Khmer arts and engineering, however, the efforts were once again consumed by wars, notably, under the reign of Khmer Rouge. As a descendant to the barely survived heritages, I sense a calling of my soul to return back to the root of our ancestors, the Great Builders in the name of Khmer who had not just created but perfected the art of creation. </p>
-                <p id="txt1"> The wonder of 21st-century technology unearths the mystery of the past. The Internet brings forth archives of information that I spent time researching as a child. Intrigued by the site of Angkor, I dropped by the internet café to investigate the ancient civilization. It was then that I discovered that Khmers once acquired great powers of knowledge to achieve the impossible. At that moment, I felt as proud to be Khmer as the way many Americans felt when the United States first landed on the moon. Simultaneously, I sensed sorrow for the horrible loss of our great minds and treasures, but nothing can be compared to the inspiration that blossomed into a dream of becoming a great inventor myself. Amazed by the information found, I only became more curious about how such information was obtained and established onto the internet. My discovery of what the internet can do certainly sparked my quest to pursue modern technology as an outlet for my creation. Not only it has revolutionized the way we create, but also the way we think as it helped me connect the dots revealing the flaw behind a fallen empire. Even though the Khmers had the skills to engineer the changes to the environment, those changes disrupted the cycle of nature that backfired into disastrous climate change events leading to the decline of a nation. Therefore, engineers don’t just create, they also innovate. </p>  
-                <p id="txt1"> Reality as defined by Albert Einstein “is a process of our thinking” to which he added, “it cannot be changed without changing our thinking”. My educational journey to becoming a software developer relies heavily on the understanding of philosophy as I do believe that perspective is an important aspect to identify a problem. As a learner, I strive to construct a mindset by tapping into the mind of educators in order to understand the nature behind their thought processes. By doing so, I realize that to fully comprehend a concept, I must seek others who ask the questions that I don’t. The idea inspired me to become an educator tutoring math ever since high school for the purpose of identifying the distinct ways students process the same information, which got me into the habit of apprehending things with simpler analogies for better understanding. At the same time, it also made me aware of the different perspectives that I have never thought of to which further expand my capability in identifying mistakes and problems. </p>
-                <p id="txt1"> As a concept, software is a thought process laid down in programming languages with an aim to command machines to perform a task. To an extent, programmers are commanders of machines, and it’s my goal as one to artistically utilize machines for innovation. With years’ worth of experience in critical-thinking skill development along with the knowledge I obtain about machines and their languages, I’m currently constructing a digital portfolio webpage to showcase my past projects when applying for an internship/junior position at tech companies. In doing so, I can guarantee that I will endure enough industrial experiences needed in addition to my education at UCLA to be a skilled developer. </p>   
-                <center><img src="image/Angkor.png" alt="Khmer Pride" class="angkor" ></center>
-            </div>
-            <div id="vl"></div>
-            <div id= "box2">
-                <h1 id="head1"> EDUCATION: <br><br> </h1>
-                <p id="txt1"> I graduated with a Bachelor of Science degree in Computer Science from the University of California, Los Angeles (UCLA) in August 2023. Prior to UCLA, I transferred from Long Beach City College (LBCC), where I earned two Associated of Science degrees in Computer Science and Physical Science in 2021. I originally hailed from Phnom Penh, Cambodia, where I attended Western International High School before immigrating to the United States in 2019. </p>
-                <p id="txt1"> <b>Courseworks taken: (Click on the subjects to expand)</b> </p>
-                
-                <button id="coursebtn" onclick="showMATH()"> Mathematics </button>
-                <div id="mathList">
-                    <ul>
-                        <li> Single-Variable Calculus (MATH 31A/B) </li>
-                        <li> Multivariable Calculus (MATH 32A/B)  </li>
-                        <li> Linear Algebra (MATH 33A)  </li>
-                        <li> Differential Equations (MATH 33B)  </li>
-                        <li> Introduction to Probability (STATS 100A) </li>
-                        <li> Intro to Discrete Math (MATH 61)  </li>
-                        <li> Nonlinear Dynamic and Chaos (MATH 134) </li>
-                        <li> Mathematical Modeling (MATH 142) </li>
-                        <li> Machine Learning (MATH 156) </li>
-                    </ul>
+
+    <div id="slide2" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - ABOUT ME</div>
+            <div class="s2-content-container">
+                <div class="s2-text-content">
+                    <p id="s2-maintext">Born and raised in Cambodia. Currently residing in Atlanta, Georgia. Completed my B.S. degree in Computer Science from UCLA.</p>
+                    <p id="s2-maintext">Enjoy painting, filmmaking, and coding.</p>
+                    <p id="s2-alttext">Coded by Dylan Phe.</p>
                 </div>
-                <br>
-                <button id="coursebtn" onclick="showPHYS()"> Physics for Scientists and Engineers </button>
-                <div id="physicsList">
-                    <ul>
-                        <li> Mechanics  (PHYSICS 1A) </li>
-                        <li> Fluids, Oscillations, Waves, and Electricity (PHYSICS 1B)  </li>
-                        <li> Magnetism, Electrodynamics, Optics, and Special Relativity (PHYSICS 1C) </li>
-                        <li> Physics Laboratory for Scientists and Engineers: Mechanics (PHYSICS 4AL)  </li>
-                    </ul>
-                </div>
-                <br>
-                <button id="coursebtn" onclick="showCS()"> Computer Science </button>
-                <div id="csList">
-                    <ul>
-                        <li> Intro to Computer Science (CS 31) </li>
-                        <li> Data Structures (CS 32) </li>
-                        <li> Intro to Computer Architecture (CS 33) </li>
-                        <li> Logic Design of Digital System (CS M51A) </li>
-                        <li> Digital Design Lab (CS M15AB) </li>
-                        <li> Computer Systems Architecture (CS M152B) </li>
-                        <li> Algorithm & Complexity (CS 180) </li>
-                        <li> Formal Languages & Automata (CS 181) </li>
-                        <li> Software Construction (CS 35L) </li>
-                        <li> Operating Systems Principle (CS 111) </li>
-                        <li> Computer Network Fundamental (CS 118) </li>
-                        <li> Programming Languages (CS 131) </li>
-                        <li> Software Engineering (CS 130) </li>
-                        <li> Computer Security (CS 136) </li>
-                        <li> Data Management Systems (CS 143) </li>
-                        <li> Introduction to Data Mining (CS 145) </li>
-                        <li> Artificial Intelligence (CS 161) </li>
-                        <li> Introduction to Computer Graphics (CS 174A) </li>
-                    </ul>
-                </div>
-                <br>
-                <button id="coursebtn" onclick="showECE()"> Electrical and Computer Engineering </button>
-                <div id="eceList">
-                    <ul>
-                        <li> Intro to Electrical Engineering (ECE 3) </li>
-                        <li> Electrical and Electronic Circuits (ECE 100)  </li>
-                        <li> Engineering Electromagnetics (ECE 101A)  </li>
-                    </ul>
-                </div>
-                <br>
-                <button id="coursebtn" onclick="showENGR()"> Engineering Ethics </button>
-                <div id="engrList">
-                    <ul>
-                        <li> Engineering and Society  (ENGR 183EW) </li>
-                    </ul>
-                </div>
-                <br>
-                <p id="txt1"> <b>Achievements:</b> </p>
-                <ul id="achievementList">
-                    <li> UCLA Louis Levoy Engineering Scholarship Recipient 2021-2022 </li>
-                    <li> LBCC Foundation Scholarship Recipient 2020  </li>
-                    <li> LBCC Dean's Honors List 2019-2021  </li>
-                    <li> Western International School Science Fair Gold Medal Recipient 2018 </li>
-                    <li> Valedictorian of Western International School 2018 </li>
-                    <li> Western International School Student Leadership Award 2018 </li>
-                    <li> Singapore & Asian Schools Math Olympaid Bronze Medal Recipient 2017 </li>
-                </ul>
-                <script>
-                    var x = document.getElementById("csList");
-                    var y = document.getElementById("eceList");
-                    var z = document.getElementById("mathList");
-                    var a = document.getElementById("physicsList")
-                    var b = document.getElementById("engrList")
-                    function showCS() {
-                        if (x.style.display === "block") {
-                            x.style.display = "none";
-                        } else {
-                            x.style.display = "block";
-                        }
-                    }
-                    function showECE() {
-                        if (y.style.display === "block") {
-                            y.style.display = "none";
-                        } else {
-                            y.style.display = "block";
-                        }
-                    }
-                    function showMATH() {
-                        if (z.style.display === "block") {
-                            z.style.display = "none";
-                        } else {
-                            z.style.display = "block";
-                        }
-                    }
-                    function showPHYS() {
-                        if (a.style.display === "block") {
-                            a.style.display = "none";
-                        } else {
-                            a.style.display = "block";
-                        }
-                    }
-                    function showENGR() {
-                        if (b.style.display === "block") {
-                            b.style.display = "none";
-                        } else {
-                            b.style.display = "block";
-                        }
-                    }
-                </script>
-            </div>
-            <div id="vl"></div>
-            <div id="box2">
-                <h1 id="head1"> PROJECTS: <br><br> </h1>
-
-                <p id="txt1"> <b>BruinNotes (Awarded Best Project), 2023</b> </p>
-                <p id="txt1"> A centralized platform for sharing and archiving digital notes in UCLA courses, providing users with a simple yet feature-rich experience. After creating an account, a user can search for and add UCLA courses, and have a place to request and share notes. Users will also be able to like notes that they find helpful and also leave comments or questions underneath them. On top of it being a space for sharing, it will also serve as an archive of digital notes for all UCLA courses. Ultimately, BruinNotes aims to provide a simple but featureful experience for its users and to give students the tools they need to be successful. The project was supervised by Professor Miryung Kim in Software Engineering (CS 130) Course.  </p>
-                <p id="txt1"> Link to the project <a href = "bruinnotes.pdf" target="_blank" id = "p-link"> <b> report </b> </a> and <a href = "bruinnotesUI.pdf" target="_blank" id = "p-link"><b>UI design</b></a>. You can also see the code <a href = "https://github.com/dylanphe/BruinNotes" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
-
-                <p id="txt1"> <b>Dodge (Computer Graphic Game), 2023</b> </p>
-                <p id="txt1">  Inspired by <a href = "https://www.lexaloffle.com/bbs/?pid=66443#p" target="_blank" id = "p-link"> <b> the video game of the same name by Atridge </b> </a>, the proposed project, Dodge, is a computer graphics game created with TinyGraphics based on the famous video game of the same name by Atridge created for the Pico-8 game engine in 2019. Although both games follow the same instruction in which a player is to stay alive as long as possible by dodging the blocks and accumulating more scores, our version of the game is a little different in terms of designs, controls, and levels of difficulty. The project is supervised by Professor Asish Law in Computer Graphics (CS 174A) course.</p>
-                <p id="txt1"> Link to <a href = "https://dylanphe.github.io/dodge/" target="_blank" id = "p-link"> <b> Dodge </b> </a> and see the code <a href = "https://github.com/dylanphe/dodge" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
-
-                <p id="txt1"> <b>Security Evaluation of cURL 8.0.1, 2023</b> </p>
-                <p id="txt1"> Supervised by Professor Peter Reiher, our team uncovered four major security problems of curl 8.0.1 through web searches, a code review using various automated tools to find potential undocumented flaws, followed by live testing in a virtual machine to produce a demonstration of the vulnerabilities. From our investigation, we found four main vulnerabilities and some security concerns in the automated tools’ reports. Overall, we concluded that curl is a fairly secure system, as the vulnerabilities are not too severe and the code does a sufficient job of handling edge cases and preventing unexpected failures. Generally, any vulnerabilities that we did find were low impact and/or required very special conditions to exploit. </p>
-                <p id="txt1"> Link to the <a href = "sec_report.pdf" target="_blank" id = "p-link"> <b> FULL REPORT </b> </a> </p>
-
-                <p id="txt1"> <b>Machine Learning Models Analysis, Auto Plate Recognition, 2023</b> </p>
-                <p id="txt1"> The goal of our project focuses on using machine learning algorithms that we have learned in class and through further research to classify the State's names that appear on all license plates we obtained from the 50 U.S. States including Washington D.C. We aim to construct and train models that can effectively perform this classification task. The project involves comparing performances between different machine learning models, as well as taking into account their complexity, training times, and memory efficiency. The metrics we intend to use for our models evaluation and comparison include F1 Scores and accuracy. In addition, we train and test the performance of these algorithms on a dataset of diverse license plate images with varying lighting conditions, quality and sizes. </p>
-                <p id="txt1"> Link to the <a href = "ml_report.pdf" target="_blank" id = "p-link"> <b> REPORT </b> </a> and see the Jupyter Notebook <a href = "https://github.com/dylanphe/auto-plate-detector" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
-
-                <p id="txt1"> <b>Wordle Plus, 2022</b> </p>
-                <p id="txt1"> As a final project for the Software Construction class (CS 35L), I have recreated a prototype of the world-famous "WORDLE" web application (officially run by The New York Times website). For the prototype, I implemented upon the original "WORDLE" app additional features that allow players to play the game with either four, five, or six letters WORDLE and as many times per day as they would like. The project was supervised by Dr. Paul Eggert for Software Construction (CS 35L) course. </p>
-                <p id="txt1"> Link to <a href = "https://dylanphe.github.io/werdle/" target="_blank" id = "p-link"> <b> Wordle Plus</b> </a> and see the code <a href = "https://github.com/dylanphe/werdle" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
-                
-                <p id="txt1"> <b>Line Following Arduino Car, 2021</b> </p>
-                <p id="txt1"> In the Intro to Electrical Engineering class's lab (ECE 3), I and my teammate were provided with a <a href = "https://www.ti.com/lit/ml/sekp166/sekp166.pdf?ts=1687840742235" target="_blank" id = "p-link"> <b>TI-RSLK</b> </a> car, which we have partially reconfigured by fusing in phototransistors as sensors to detect the changes in light reflected from the surface of the customized line track. We also reprogrammed the sensor-fused car to allow autonomous navigation through the line track using Arduino software. The project was supervised by Dr. Dennise M. Briggs.</p>
-                <p id="txt1"> Link to the demonstration video of the <a href = "https://drive.google.com/file/d/1ebwFpd3HXM6A1DzIheHj25fzP0Mb7uSV/view?usp=sharing" target="_blank" id = "p-link"> <b> line following arduino car project </b> </a> and see the code <a href = "https://github.com/dylanphe/Arduino-car" target="_blank" id = "p-link"> <b> on GitHub </b> </a></p>
-
-                <p id="txt1"> <b>Python's Asyncio Proxy Herd, 2022</b> </p>
-                <p id="txt1"> An application server herd capable of interserver communication built using Python's asyncio library. In the attempt to build a Wikimedia inspired service for a news application that is capable of interserver communication, we are interested in utilizing Python’s asyncio asynchronous networking library for such implementations. To some extents, we do know that such task can be accomplished using asyncio, however, we want to further investigate its strengths and weaknesses in terms of performance, simplicity, reliability, and maintainability to avoid issues that may arise for a large-scale use of the application or when the application is integrated with others to become parts of a larger oneThe project was supervised by Dr. Paul Eggert in Software Construction class.</p>
-                <p id="txt1"> Link to the <a href = "https://github.com/dylanphe/python-asyncio-proxy-herd" target="_blank" id = "p-link"> <b> CODE </b> </a> on GitHub. </p>
-
-                <p id="txt1"> <b>Window Based Reliable Data Transfer, 2023</b> </p>
-                <p id="txt1"> This project establishes a reliable file transfer system over UDP. The server connects to clients using a three-way handshake. The client sends the file in packets, tracking the oldest unacknowledged packet with a timer. It fills the window, sends packets, and resets the timer when necessary. If an ACK arrives, it advances the window. Once all packets are sent, the client initiates connection teardown. The server continuously processes client packets, sending ACKs for in-order packets, cumulative ACKs for out-of-order but within-window packets, and DUPACKs for out-of-window packets. The project was supervised by Dr. Songwu Lu in Computer Network class.</p>
-                <p id="txt1"> Link to the <a href = "https://github.com/dylanphe/Window-Based-Reliable-Data-Transfer" target="_blank" id = "p-link"> <b> CODE </b> </a> on GitHub. </p>
-
-            </div>
-
-            <div id="vl"></div>
-            <div id="box2">
-                <h1 id="head1"> ARTWORKS BY ME: <br><br> </h1>
-                <p id="txt1"> I'm not a professional artist but I do love to paint during my free time so, here are some of my artworks. </p>
-            </div>
-
-            <div id="vl-short"></div>
-            <div id="box3">
-                <img src="image\roomie.jpg" id="p-painting" >
-                <div id="painting-des">
-                    <h1 id="p-txt">Roomie</h1>
+                <div class="s2-image-content">
+                    <img src="image/Headshot.jpg" alt="dylan's photo">
                 </div>
             </div>
-            <div id="vl-short"></div>
-            <div id="box3">
-                <img src="image\thermalbot.jpg" id="p-painting" >
-                <div id="painting-des">
-                    <p id="p-txt"> <b>Thermalbot</b> </p>
-                </div>
-            </div>
-            <div id="vl-short"></div>
-            <div id="box3">
-                <img src="image\pulpfiction.jpg" id="p-painting" >
-                <div id="painting-des">
-                    <p id="p-txt"> <b>Saudade</b> </p>
-                </div>
-            </div>
-            <div id="vl-short"></div>
-            <div id="box4">
-                <img src="image\trippyStatic.jpg" id="s-painting" >
-                <div id="s-painting-des">
-                    <p id="p-txt"> <b>Trippy-static</b> </p>
-                </div>
-            </div>
-            <div id="vl-bottom"></div>
-
-            <hr id = "main-box">
-            <h1 id="head2"> Made By Dylan Phe </h1>
         </div>
-    </body>
+    </div>
+
+    <div id="slide3" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - EDUCATION:</div>
+            <div class="s3-content-container">
+                <p id="s3-maintext"> I graduated with a Bachelor of Science degree in Computer Science from the University of California, Los Angeles (UCLA) in August 2023. Prior to UCLA, I transferred from Long Beach City College (LBCC), where I earned two Associated of Science degrees in Computer Science and Physical Science in 2021. </p>
+                <p id="s3-subheading"> <b>Courseworks taken</b> </p>
+                
+                <div id = "s3-coursesSys">
+                    <div id="s3-buttonsContainer">
+                        <button id="mathBtn" class="s3-coursesbtn" onclick="showMATH()"> Mathematics </button>
+                        <br>
+                        <button id="physicsBtn" class="s3-coursesbtn" onclick="showPHYS()"> Physics </button>
+                        <br>
+                        <button id="csBtn" class="s3-coursesbtn" onclick="showCS()"> Computer Science </button>
+                        <br>
+                        <button id="eceBtn" class="s3-coursesbtn" onclick="showECE()"> Electrical and Computer Engineering </button>
+                        <br>
+                        <button id="engrBtn" class="s3-coursesbtn" onclick="showENGR()"> Engineering Ethics </button>
+                    </div>
+                    <div class="vl"></div>
+                    <div id="s3-coursesList">(Click on the subjects to expand)</div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide4" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - BruinNotes</div>
+            <div class="s4-content-container">
+                <p id="s4-maintext"> BruinNotes is a platform for UCLA students to share, archive, and access course notes. It offers a user-friendly interface for adding courses, sharing and requesting notes, as well as engaging with content through likes, dislike and comments. The project was developed under Professor Miryung Kim’s guidance in CS 130.</p>
+                <div id="s4-linkList">
+                    <a href="bruinnotes.pdf" target="_blank">
+                        <img src="image/report.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                    <a href="https://github.com/dylanphe/BruinNotes" target="_blank">
+                        <img src="image/git.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                </div>
+                <div class="s4-slideshow-container">
+                    <!-- Slides -->
+                    <div class="s4-slide s4-active-slide">
+                        <img src="image/bruinnotes/1.png" alt="Image 1">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/2.png" alt="Image 2">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/3.png" alt="Image 3">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/4.png" alt="Image 4">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/5.png" alt="Image 5">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/6.png" alt="Image 6">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/7.png" alt="Image 7">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/8.png" alt="Image 8">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/9.png" alt="Image 9">
+                    </div>
+                    <div class="s4-slide">
+                        <img src="image/bruinnotes/10.png" alt="Image 10">
+                    </div>
+                    <!-- Add more slides as needed -->
+
+                    <!-- Slide Indicators -->
+                    <div class="s4-indicator-container">
+                        <span class="s4-indicator s4-active-indicator" onclick="currentSlide(0)"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                        <span class="s4-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide5" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - Dodge</div>
+            <div class="s5-content-container">
+                <p id="s5-maintext"> Dodge, is a computer graphics game created with WebGL where players try to stay alive as long as possible by dodging the blocks and accumulating more scores. The project is supervised by Professor Asish Law in Computer Graphics (CS 174A) course.</p>
+                <div id="s5-linkList">
+                    <a href="https://dylanphe.github.io/dodge/" target="_blank">
+                        <img src="image/play.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                    <a href="https://github.com/dylanphe/dodge" target="_blank">
+                        <img src="image/git.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                </div>
+                <div class="s5-slideshow-container">
+                    <!-- Slides -->
+                    <div class="s5-slide s5-active-slide">
+                        <img src="image/dodge/1.png" alt="Image 1">
+                    </div>
+                    <div class="s5-slide">
+                        <img src="image/dodge/2.gif" alt="Image 2">
+                    </div>
+                    <div class="s5-slide">
+                        <img src="image/dodge/3.gif" alt="Image 2">
+                    </div>
+                    <div class="s5-slide">
+                        <img src="image/dodge/4.gif" alt="Image 2">
+                    </div>
+                    <div class="s5-slide">
+                        <img src="image/dodge/5.gif" alt="Image 2">
+                    </div>
+                    <!-- Add more slides as needed -->
+
+                    <!-- Slide Indicators -->
+                    <div class="s5-indicator-container">
+                        <span class="s5-indicator s5-active-indicator" onclick="currentSlide(0)"></span>
+                        <span class="s5-indicator"></span>
+                        <span class="s5-indicator"></span>
+                        <span class="s5-indicator"></span>
+                        <span class="s5-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide6" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - Wordle Plus</div>
+            <div class="s6-content-container">
+                <p id="s6-maintext"> Wordle Plus, is an implementation upon the original "WORDLE" app additional features that allow players to play the game with either four, five, or six letters WORDLE and as many times per day as they would like. The project was supervised by Dr. Paul Eggert for Software Construction (CS 35L) course.</p>
+                <div id="s6-linkList">
+                    <a href="https://dylanphe.github.io/werdle/" target="_blank">
+                        <img src="image/play.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                    <a href="https://github.com/dylanphe/werdle" target="_blank">
+                        <img src="image/git.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                </div>
+                <div class="s6-slideshow-container">
+                    <!-- Slides -->
+                    <div class="s6-slide s6-active-slide">
+                        <img src="image/wordle/2.png" alt="Image 1">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/3.png" alt="Image 2">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/4.png" alt="Image 3">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/5.png" alt="Image 4">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/6.png" alt="Image 5">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/7.png" alt="Image 6">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/8.png" alt="Image 7">
+                    </div>
+                    <div class="s6-slide">
+                        <img src="image/wordle/9.png" alt="Image 7">
+                    </div>
+                    <!-- Add more slides as needed -->
+
+                    <!-- Slide Indicators -->
+                    <div class="s6-indicator-container">
+                        <span class="s6-indicator s6-active-indicator" onclick="currentSlide(0)"></span>
+                        <span class="s6-indicator"></span>
+                        <span class="s6-indicator"></span>
+                        <span class="s6-indicator"></span>
+                        <span class="s6-indicator"></span>
+                        <span class="s6-indicator"></span>
+                        <span class="s6-indicator"></span>
+                        <span class="s6-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide7" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - Line Following Arduino Car</div>
+            <div class="s7-content-container">
+                <p id="s7-maintext"> For this project, I enhanced a TI-RSLK car by incorporating phototransistors as sensors to detect variations in light reflection from a custom line track. Using Arduino software, I then reprogrammed the car to enable autonomous navigation along the track. This was part of the ECE3 course, supervised by Dr. Dennise M. Briggs.</p>
+                <div id="s7-linkList">
+                    <a href="https://github.com/dylanphe/Arduino-car" target="_blank">
+                        <img src="image/git.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                </div>
+                <div class="s7-slideshow-container">
+                    <!-- Slides -->
+                    <div class="s7-slide s7-active-slide">
+                        <video controls>
+                            <source src="image/arduino/arduinoVid.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>                          
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide8" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - Security Evaluation of cURL 8.0.1</div>
+            <div class="s8-content-container">
+                <p id="s8-maintext"> Supervised by Professor Peter Reiher, our team uncovered four major security problems of curl 8.0.1 through web searches, a code review using various automated tools to find potential undocumented flaws, followed by live testing in a virtual machine to produce a demonstration of the vulnerabilities. From our investigation, we found four main vulnerabilities and some security concerns in the automated tools’ reports. Overall, we concluded that curl is a fairly secure system, as the vulnerabilities are not too severe and the code does a sufficient job of handling edge cases and preventing unexpected failures. Generally, any vulnerabilities that we did find were low impact and/or required very special conditions to exploit.</p>
+                <div id="s8-linkList">
+                    <a href="sec_report.pdf" target="_blank">
+                        <img src="image/report.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide9" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - Auto Plate Recognition</div>
+            <div class="s9-content-container">
+                <p id="s9-maintext"> Our project aims to classify U.S. state names on license plates using machine learning algorithms. We’ve built and compared three models: Convolution Neural Networks (CNNs), Feed Forward Neural Networks (FFNNs), and pre-trained CNNs - ResNet50. These models were evaluated based on F1 scores and accuracy, and tested on a diverse dataset of license plate images. The best performing model was ResNet50 with a test accuracy of 85%.</p>
+                <div id="s9-linkList">
+                    <a href="ml_report.pdf" target="_blank">
+                        <img src="image/report.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                    <a href="https://github.com/dylanphe/auto-plate-detector/blob/main/License_plate_recognition.ipynb" target="_blank">
+                        <img src="image/notebook.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                    <a href="https://github.com/dylanphe/auto-plate-detector" target="_blank">
+                        <img src="image/git.png" alt="Button Image" style="cursor: pointer;">
+                    </a>
+                </div>
+                <div class="s9-slideshow-container">
+                    <!-- Slides -->
+                    <div class="s9-slide s9-active-slide">
+                        <img src="image/ml/4.png" alt="Image 1">
+                    </div>
+                    <div class="s9-slide">
+                        <img src="image/ml/5.png" alt="Image 2">
+                    </div>
+                    <div class="s9-slide">
+                        <img id="s9-smallIMG" src="image/ml/6.png" alt="Image 3">
+                    </div>
+                    <!-- Add more slides as needed -->
+
+                    <!-- Slide Indicators -->
+                    <div class="s9-indicator-container">
+                        <span class="s9-indicator s9-active-indicator" onclick="currentSlide(0)"></span>
+                        <span class="s9-indicator"></span>
+                        <span class="s9-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="slide10" class="slide">
+        <div id= "transparentCover">
+            <div class = "slide-title">DYLAN PHE - Artworks</div>
+            <div class="s10-content-container">
+                <p id="s10-maintext">I'm not a professional artist but I do love to paint during my free time so, here are some of my artworks.</p>
+                <div class="s10-slideshow-container">
+                    <!-- Slides -->
+                    <div class="s10-slide s10-active-slide">
+                        <img src="image/artworks/thermalbot.jpg" alt="Image 1">
+                    </div>
+                    <div class="s10-slide">
+                        <img src="image/artworks/pulpfiction.jpg" alt="Image 2">
+                    </div>
+                    <div class="s10-slide">
+                        <img src="image/artworks/roomie.jpg" alt="Image 3">
+                    </div>
+                    <div class="s10-slide">
+                        <img src="image/artworks/trippyStatic.jpg" alt="Image 3">
+                    </div>
+                    <!-- Add more slides as needed -->
+
+                    <!-- Slide Indicators -->
+                    <div class="s10-indicator-container">
+                        <span class="s10-indicator s10-active-indicator" onclick="currentSlide(0)"></span>
+                        <span class="s10-indicator"></span>
+                        <span class="s10-indicator"></span>
+                        <span class="s10-indicator"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="indicators">
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+    </div>
+
+
+    <script>
+        // Porfolio slides
+        function debounce(func, wait, immediate) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                var later = function() {
+                    timeout = null;
+                    if (!immediate) func.apply(context, args);
+                };
+                var callNow = immediate && !timeout;
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+                if (callNow) func.apply(context, args);
+            };
+        };
+        
+        let currentSlide = 1;
+        const indicators = document.querySelectorAll('.indicator');
+        function updateIndicators(currentSlide) {
+            indicators.forEach((indicator, index) => {
+                if (index === currentSlide - 1) {
+                    indicator.classList.add('active');
+                } else {
+                    indicator.classList.remove('active');
+                }
+            });
+        }
+        updateIndicators(currentSlide);
+        
+        const debouncedScroll = debounce(function(event) {
+            if (event.deltaY > 0 && currentSlide < 10) {
+                currentSlide++;
+            } else if (event.deltaY < 0 && currentSlide > 1) {
+                currentSlide--;
+            }
+            document.getElementById('slide' + currentSlide).scrollIntoView({behavior: 'smooth'});
+            updateIndicators(currentSlide);
+        }, 225, false);
+        
+        window.addEventListener('wheel', debouncedScroll);      
+
+        // Animated slide titles
+        let observerOptions = {
+            threshold: 0.5 // Adjust the threshold value as needed
+        };
+    
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let slideTitle = entry.target.querySelector('.slide-title');
+                    if (slideTitle) {
+                        slideTitle.style.opacity = '1';
+                        slideTitle.classList.add('animate-on-view');
+                    }
+                } else {
+                    let slideTitle = entry.target.querySelector('.slide-title');
+                    if (slideTitle) {
+                        slideTitle.style.opacity = '0';
+                        slideTitle.classList.remove('animate-on-view');
+                    }
+                }
+            });
+        }, observerOptions);
+    
+        let slides = document.querySelectorAll('.slide');
+        slides.forEach(slide => {
+            observer.observe(slide);
+        });
+
+        // Course List Implementation
+        var x = document.getElementById("s3-csList");
+        var y = document.getElementById("s3-eceList");
+        var z = document.getElementById("s3-mathList");
+        var a = document.getElementById("s3-physicsList");
+        var b = document.getElementById("s3-engrList");
+        
+        var mathList = `
+        <span> Single-Variable Calculus (MATH 31A/B) </span>
+        <span> Multivariable Calculus (MATH 32A/B)  </span>
+        <span> Linear Algebra (MATH 33A)  </span>
+        <span> Differential Equations (MATH 33B)  </span>
+        <span> Introduction to Probability (STATS 100A) </span>
+        <span> Intro to Discrete Math (MATH 61)  </span>
+        <span> Nonlinear Dynamic and Chaos (MATH 134) </span>
+        <span> Mathematical Modeling (MATH 142) </span>
+        <span> Machine Learning (MATH 156) </span>
+        `;
+
+        var physicsList = `
+        <span> Mechanics  (PHYSICS 1A) </span>
+        <span> Fluids, Oscillations, Waves, and Electricity (PHYSICS 1B)  </span>
+        <span> Magnetism, Electrodynamics, Optics, and Special Relativity (PHYSICS 1C) </span>
+        <span> Physics Laboratory for Scientists and Engineers: Mechanics (PHYSICS 4AL)  </span>
+        `;
+
+        var csList = `
+        <span>Intro to Computer Science (CS 31)</span>
+        <span> Data Structures (CS 32) </span>
+        <span> Intro to Computer Architecture (CS 33) </span>
+        <span> Logic Design of Digital System (CS M51A) </span>
+        <span> Digital Design Lab (CS M15AB) </span>
+        <span> Computer Systems Architecture (CS M152B) </span>
+        <span> Algorithm & Complexity (CS 180) </span>
+        <span> Formal Languages & Automata (CS 181) </span>
+        <span> Software Construction (CS 35L) </span>
+        <span> Operating Systems Principle (CS 111) </span>
+        <span> Computer Network Fundamental (CS 118) </span>
+        <span> Programming Languages (CS 131) </span>
+        <span> Software Engineering (CS 130) </span>
+        <span> Computer Security (CS 136) </span>
+        <span> Data Management Systems (CS 143) </span>
+        <span> Introduction to Data Mining (CS 145) </span>
+        <span> Artificial Intelligence (CS 161) </span>
+        <span> Introduction to Computer Graphics (CS 174A) </span>
+        `;
+
+        var eceList = `
+        <span> Intro to Electrical Engineering (ECE 3) </span>
+        <span> Electrical and Electronic Circuits (ECE 100)  </span>
+        <span> Engineering Electromagnetics (ECE 101A)  </span>
+        `;
+
+        var engrList = `
+        <span> Engineering and Society  (ENGR 183EW) </span>
+        `;
+
+        /*function showCS() {
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+        }*/
+
+        function showCS() {
+            document.getElementById("s3-coursesList").innerHTML = csList;
+            document.getElementById("csBtn").style.color = '#D1B000';
+            document.getElementById("eceBtn").style.color = 'white';
+            document.getElementById("engrBtn").style.color = 'white';
+            document.getElementById("mathBtn").style.color = 'white';
+            document.getElementById("physicsBtn").style.color = 'white';
+        }
+
+        function showECE() {
+            document.getElementById("s3-coursesList").innerHTML = eceList;
+            document.getElementById("eceBtn").style.color = '#D1B000';
+            document.getElementById("csBtn").style.color = 'white';
+            document.getElementById("engrBtn").style.color = 'white';
+            document.getElementById("mathBtn").style.color = 'white';
+            document.getElementById("physicsBtn").style.color = 'white';
+        }
+        function showMATH() {
+            document.getElementById("s3-coursesList").innerHTML = mathList;
+            document.getElementById("mathBtn").style.color = '#D1B000';
+            document.getElementById("eceBtn").style.color = 'white';
+            document.getElementById("engrBtn").style.color = 'white';
+            document.getElementById("csBtn").style.color = 'white';
+            document.getElementById("physicsBtn").style.color = 'white';
+        }
+        function showPHYS() {
+            document.getElementById("s3-coursesList").innerHTML = physicsList;
+            document.getElementById("physicsBtn").style.color = '#D1B000';
+            document.getElementById("eceBtn").style.color = 'white';
+            document.getElementById("engrBtn").style.color = 'white';
+            document.getElementById("mathBtn").style.color = 'white';
+            document.getElementById("csBtn").style.color = 'white';
+        }
+        function showENGR() {
+            document.getElementById("s3-coursesList").innerHTML = engrList;
+            document.getElementById("engrBtn").style.color = '#D1B000';
+            document.getElementById("eceBtn").style.color = 'white';
+            document.getElementById("csBtn").style.color = 'white';
+            document.getElementById("mathBtn").style.color = 'white';
+            document.getElementById("physicsBtn").style.color = 'white';
+        }
+
+        let s4CurrentSlideIndex = 0;
+        const s4Slides = document.querySelectorAll('.s4-slide');
+        console.log(s4Slides.length);
+        const s4Indicators = document.querySelectorAll('.s4-indicator');
+        function s4ShowNextSlide() {
+            // Hide the current slide
+            s4Slides[s4CurrentSlideIndex].classList.remove('s4-active-slide');
+            s4Indicators[s4CurrentSlideIndex].classList.remove('s4-active-indicator');
+            // Increment the index to show the next slide
+            s4CurrentSlideIndex = (s4CurrentSlideIndex + 1) % (s4Slides.length);
+            console.log(s4CurrentSlideIndex);
+            // Show the next slide
+            s4Slides[s4CurrentSlideIndex].classList.add('s4-active-slide');
+            s4Indicators[s4CurrentSlideIndex].classList.add('s4-active-indicator');
+        }
+        
+        // Add click event listener to each slide
+        s4Slides.forEach(s4Slide => {
+            s4Slide.addEventListener('click', s4ShowNextSlide);
+        });
+
+        let s5CurrentSlideIndex = 0;
+        const s5Slides = document.querySelectorAll('.s5-slide');
+        console.log(s5Slides.length);
+        const s5Indicators = document.querySelectorAll('.s5-indicator');
+        function s5ShowNextSlide() {
+            // Hide the current slide
+            s5Slides[s5CurrentSlideIndex].classList.remove('s5-active-slide');
+            s5Indicators[s5CurrentSlideIndex].classList.remove('s5-active-indicator');
+            // Increment the index to show the next slide
+            s5CurrentSlideIndex = (s5CurrentSlideIndex + 1) % (s5Slides.length);
+            console.log(s5CurrentSlideIndex);
+            // Show the next slide
+            s5Slides[s5CurrentSlideIndex].classList.add('s5-active-slide');
+            s5Indicators[s5CurrentSlideIndex].classList.add('s5-active-indicator');
+        }
+        
+        // Add click event listener to each slide
+        s5Slides.forEach(s5Slide => {
+            s5Slide.addEventListener('click', s5ShowNextSlide);
+        });
+
+        let s6CurrentSlideIndex = 0;
+        const s6Slides = document.querySelectorAll('.s6-slide');
+        console.log(s6Slides.length);
+        const s6Indicators = document.querySelectorAll('.s6-indicator');
+        function s6ShowNextSlide() {
+            // Hide the current slide
+            s6Slides[s6CurrentSlideIndex].classList.remove('s6-active-slide');
+            s6Indicators[s6CurrentSlideIndex].classList.remove('s6-active-indicator');
+            // Increment the index to show the next slide
+            s6CurrentSlideIndex = (s6CurrentSlideIndex + 1) % (s6Slides.length);
+            console.log(s6CurrentSlideIndex);
+            // Show the next slide
+            s6Slides[s6CurrentSlideIndex].classList.add('s6-active-slide');
+            s6Indicators[s6CurrentSlideIndex].classList.add('s6-active-indicator');
+        }
+        
+        // Add click event listener to each slide
+        s6Slides.forEach(s6Slide => {
+            s6Slide.addEventListener('click', s6ShowNextSlide);
+        });
+
+        let s9CurrentSlideIndex = 0;
+        const s9Slides = document.querySelectorAll('.s9-slide');
+        console.log(s9Slides.length);
+        const s9Indicators = document.querySelectorAll('.s9-indicator');
+        function s9ShowNextSlide() {
+            // Hide the current slide
+            s9Slides[s9CurrentSlideIndex].classList.remove('s9-active-slide');
+            s9Indicators[s9CurrentSlideIndex].classList.remove('s9-active-indicator');
+            // Increment the index to show the next slide
+            s9CurrentSlideIndex = (s9CurrentSlideIndex + 1) % (s9Slides.length);
+            console.log(s9CurrentSlideIndex);
+            // Show the next slide
+            s9Slides[s9CurrentSlideIndex].classList.add('s9-active-slide');
+            s9Indicators[s9CurrentSlideIndex].classList.add('s9-active-indicator');
+        }
+        
+        // Add click event listener to each slide
+        s9Slides.forEach(s9Slide => {
+            s9Slide.addEventListener('click', s9ShowNextSlide);
+        });
+
+        let s10CurrentSlideIndex = 0;
+        const s10Slides = document.querySelectorAll('.s10-slide');
+        console.log(s10Slides.length);
+        const s10Indicators = document.querySelectorAll('.s10-indicator');
+        function s10ShowNextSlide() {
+            // Hide the current slide
+            s10Slides[s10CurrentSlideIndex].classList.remove('s10-active-slide');
+            s10Indicators[s10CurrentSlideIndex].classList.remove('s10-active-indicator');
+            // Increment the index to show the next slide
+            s10CurrentSlideIndex = (s10CurrentSlideIndex + 1) % (s10Slides.length);
+            console.log(s10CurrentSlideIndex);
+            // Show the next slide
+            s10Slides[s10CurrentSlideIndex].classList.add('s10-active-slide');
+            s10Indicators[s10CurrentSlideIndex].classList.add('s10-active-indicator');
+        }
+        
+        // Add click event listener to each slide
+        s10Slides.forEach(s10Slide => {
+            s10Slide.addEventListener('click', s10ShowNextSlide);
+        });
+    </script>
+</body>
 </html>
