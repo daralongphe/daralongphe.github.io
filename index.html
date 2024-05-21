@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>DYLAN PHE</title>
     <link href="style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@
             </a>
         </div>
         <span id = "s1_spacingText">CHANDARALONG(DYLAN) PHE</span>
-        <span id = "s1_dropDownText">Software/Full-Stack Developer and Part Time Educator</span>
+        <span id = "s1_dropDownText">Software & Full-Stack Engineer</span>
         <span class = "bruins-span">
             <img src="image\bruins_logo.png" id="bruins-logo" >
         </span>
@@ -504,62 +504,104 @@
         var b = document.getElementById("s3-engrList");
         
         var mathList = `
-        <span> Single-Variable Calculus (MATH 31A/B) </span>
-        <span> Multivariable Calculus (MATH 32A/B)  </span>
-        <span> Linear Algebra (MATH 33A)  </span>
-        <span> Differential Equations (MATH 33B)  </span>
-        <span> Introduction to Probability (STATS 100A) </span>
-        <span> Intro to Discrete Math (MATH 61)  </span>
-        <span> Nonlinear Dynamic and Chaos (MATH 134) </span>
-        <span> Mathematical Modeling (MATH 142) </span>
-        <span> Machine Learning (MATH 156) </span>
+        <span> Single-Variable Calculus </span>
+        <span> Multivariable Calculus </span>
+        <span> Linear Algebra </span>
+        <span> Differential Equations </span>
+        <span> Introduction to Probability </span>
+        <span> Intro to Discrete Math </span>
+        <span> Nonlinear Dynamic and Chaos </span>
+        <span> Mathematical Modeling </span>
+        <span> Machine Learning </span>
         `;
+
+        // var mathList = `
+        // <span> Single-Variable Calculus (MATH 31A/B) </span>
+        // <span> Multivariable Calculus (MATH 32A/B)  </span>
+        // <span> Linear Algebra (MATH 33A)  </span>
+        // <span> Differential Equations (MATH 33B)  </span>
+        // <span> Introduction to Probability (STATS 100A) </span>
+        // <span> Intro to Discrete Math (MATH 61)  </span>
+        // <span> Nonlinear Dynamic and Chaos (MATH 134) </span>
+        // <span> Mathematical Modeling (MATH 142) </span>
+        // <span> Machine Learning (MATH 156) </span>
+        // `;
 
         var physicsList = `
-        <span> Mechanics  (PHYSICS 1A) </span>
-        <span> Fluids, Oscillations, Waves, and Electricity (PHYSICS 1B)  </span>
-        <span> Magnetism, Electrodynamics, Optics, and Special Relativity (PHYSICS 1C) </span>
-        <span> Physics Laboratory for Scientists and Engineers: Mechanics (PHYSICS 4AL)  </span>
+        <span> Mechanics </span>
+        <span> Fluids, Oscillations, Waves, and Electricity  </span>
+        <span> Magnetism, Electrodynamics, Optics, and Special Relativity </span>
+        <span> Physics Laboratory for Scientists and Engineers: Mechanics </span>
         `;
+
+        // var physicsList = `
+        // <span> Mechanics  (PHYSICS 1A) </span>
+        // <span> Fluids, Oscillations, Waves, and Electricity (PHYSICS 1B)  </span>
+        // <span> Magnetism, Electrodynamics, Optics, and Special Relativity (PHYSICS 1C) </span>
+        // <span> Physics Laboratory for Scientists and Engineers: Mechanics (PHYSICS 4AL)  </span>
+        // `;
 
         var csList = `
-        <span>Intro to Computer Science (CS 31)</span>
-        <span> Data Structures (CS 32) </span>
-        <span> Intro to Computer Architecture (CS 33) </span>
-        <span> Logic Design of Digital System (CS M51A) </span>
-        <span> Digital Design Lab (CS M15AB) </span>
-        <span> Computer Systems Architecture (CS M152B) </span>
-        <span> Algorithm & Complexity (CS 180) </span>
-        <span> Formal Languages & Automata (CS 181) </span>
-        <span> Software Construction (CS 35L) </span>
-        <span> Operating Systems Principle (CS 111) </span>
-        <span> Computer Network Fundamental (CS 118) </span>
-        <span> Programming Languages (CS 131) </span>
-        <span> Software Engineering (CS 130) </span>
-        <span> Computer Security (CS 136) </span>
-        <span> Data Management Systems (CS 143) </span>
-        <span> Introduction to Data Mining (CS 145) </span>
-        <span> Artificial Intelligence (CS 161) </span>
-        <span> Introduction to Computer Graphics (CS 174A) </span>
+        <span>Intro to Computer Science </span>
+        <span> Data Structures </span>
+        <span> Intro to Computer Architecture </span>
+        <span> Logic Design of Digital System </span>
+        <span> Digital Design Lab </span>
+        <span> Computer Systems Architecture </span>
+        <span> Algorithm & Complexity </span>
+        <span> Formal Languages & Automata </span>
+        <span> Software Construction </span>
+        <span> Operating Systems Principle </span>
+        <span> Computer Network Fundamental </span>
+        <span> Programming Languages </span>
+        <span> Software Engineering </span>
+        <span> Computer Security </span>
+        <span> Data Management Systems </span>
+        <span> Introduction to Data Mining </span>
+        <span> Artificial Intelligence </span>
+        <span> Introduction to Computer Graphics </span>
         `;
+
+        // var csList = `
+        // <span>Intro to Computer Science (CS 31)</span>
+        // <span> Data Structures (CS 32) </span>
+        // <span> Intro to Computer Architecture (CS 33) </span>
+        // <span> Logic Design of Digital System (CS M51A) </span>
+        // <span> Digital Design Lab (CS M15AB) </span>
+        // <span> Computer Systems Architecture (CS M152B) </span>
+        // <span> Algorithm & Complexity (CS 180) </span>
+        // <span> Formal Languages & Automata (CS 181) </span>
+        // <span> Software Construction (CS 35L) </span>
+        // <span> Operating Systems Principle (CS 111) </span>
+        // <span> Computer Network Fundamental (CS 118) </span>
+        // <span> Programming Languages (CS 131) </span>
+        // <span> Software Engineering (CS 130) </span>
+        // <span> Computer Security (CS 136) </span>
+        // <span> Data Management Systems (CS 143) </span>
+        // <span> Introduction to Data Mining (CS 145) </span>
+        // <span> Artificial Intelligence (CS 161) </span>
+        // <span> Introduction to Computer Graphics (CS 174A) </span>
+        // `;
 
         var eceList = `
-        <span> Intro to Electrical Engineering (ECE 3) </span>
-        <span> Electrical and Electronic Circuits (ECE 100)  </span>
-        <span> Engineering Electromagnetics (ECE 101A)  </span>
+        <span> Intro to Electrical Engineering </span>
+        <span> Electrical and Electronic Circuits </span>
+        <span> Engineering Electromagnetics </span>
         `;
+
+        // var eceList = `
+        // <span> Intro to Electrical Engineering (ECE 3) </span>
+        // <span> Electrical and Electronic Circuits (ECE 100)  </span>
+        // <span> Engineering Electromagnetics (ECE 101A)  </span>
+        // `;
 
         var engrList = `
-        <span> Engineering and Society  (ENGR 183EW) </span>
+        <span> Engineering and Society </span>
         `;
 
-        /*function showCS() {
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }*/
+        // var engrList = `
+        // <span> Engineering and Society (ENGR 183EW) </span>
+        // `;
 
         function showCS() {
             document.getElementById("s3-coursesList").innerHTML = csList;
