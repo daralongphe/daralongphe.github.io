@@ -7,7 +7,7 @@ body, html {
     overflow: hidden;
 }
 .slide {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     text-align: center;
     scroll-snap-align: start;
@@ -960,7 +960,7 @@ body, html {
 
     #s3-maintext {
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1178,11 +1178,11 @@ body, html {
     }
 
     .arrow-button-1 {
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 
     .arrow-button {
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 
     .arrow-button-1 button {
