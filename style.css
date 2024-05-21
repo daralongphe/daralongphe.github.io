@@ -944,12 +944,12 @@ body, html {
 
     #s2-maintext {
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
     }
     
     #s2-alttext {
         font-size: 10px;
-        letter-spacing: 1px;
+        letter-spacing: 0px;
     }
     
     .s2-image-content img{
@@ -967,7 +967,7 @@ body, html {
     
     #s3-subheading {
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
     }
     
     #s3-coursesSys {
@@ -990,7 +990,7 @@ body, html {
         grid-template-rows: repeat(auto-fill, minmax(25px, auto));
     
         background-color: rgba(0,0,0,0);
-        height: 500px;
+        height: 350px;
         padding-left: 10px;
         
         font-size: 12px;
@@ -1002,13 +1002,13 @@ body, html {
     }
     
     .vl {
-        height: 500px;
+        height: 350px;
     }
 
     #s4-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1036,7 +1036,7 @@ body, html {
     #s5-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1059,7 +1059,7 @@ body, html {
     #s6-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1082,7 +1082,7 @@ body, html {
     #s7-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1105,7 +1105,7 @@ body, html {
     #s8-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1119,7 +1119,7 @@ body, html {
     #s9-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1147,7 +1147,7 @@ body, html {
     #s10-maintext {
         margin-bottom: 20px;
         font-size: 12px;
-        letter-spacing: 2px;
+        letter-spacing: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -1178,11 +1178,11 @@ body, html {
     }
 
     .arrow-button-1 {
-        padding-bottom: 10px;
+        padding-bottom: 50px;
     }
 
     .arrow-button {
-        padding-bottom: 10px;
+        padding-bottom: 50px;
     }
 
     .arrow-button-1 button {
